@@ -1,13 +1,12 @@
 
 Feature: Upgenix app login feature
-
   User Story:
   As a user, I should be able to login with correct credentials to different accounts.
 
   Accounts are: PosManager, SalesManager
 
   Background: For the scenarios in the feature file, user is expected to be on login page
-    Given user is on the upgenix login page
+    Given User is on the upgenix login page
 
   #1-Users can log in with valid credentials (We have 5 types of users but will test only 2 user: PosManager, SalesManager)
   Scenario Outline: Users log in with valid credentials
@@ -72,24 +71,4 @@ Feature: Upgenix app login feature
       |posmanager27@info.com  |posmanager|
       |posmanager28@info.com  |posmanager|
       |posmanager29@info.com  |posmanager|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

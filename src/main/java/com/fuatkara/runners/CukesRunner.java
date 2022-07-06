@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         "json:target/cucumber.json",
         "rerun:target/rerun.txt"
     },
-    features = "src/main/resources/login.feature",
+    features = "src/main/resources/features",
     glue = "com/fuatkara/step_definitions",
     dryRun = false
 )

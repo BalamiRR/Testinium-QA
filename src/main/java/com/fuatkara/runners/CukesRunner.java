@@ -9,8 +9,7 @@ import org.junit.runner.RunWith;
     plugin = {
         "html:target/cucumber-reports.html",
         "json:target/cucumber.json",
-        "rerun:target/rerun.txt",
-        "e.jvt.cucumber.report.PrettyReports:target/cucumber"
+        "rerun:target/rerun.txt"
     },
     features = "src/main/resources/login.feature",
     glue = "com/fuatkara/step_definitions",

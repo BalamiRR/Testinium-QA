@@ -7,11 +7,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.Set;
 
 public class LoginSD {
 
@@ -45,9 +42,13 @@ public class LoginSD {
         wait.until(ExpectedConditions.visibilityOf(loginP.dashboard));
         String expectedDashboard = "Odoo";
         String actualDashboard = Driver.getDriver().getTitle();
-
         Assert.assertEquals("The title is not same as the expected! ", expectedDashboard, actualDashboard);
-
     }
+
+    @Then("User sees error message")
+    public void user_sees_error_message() {
+        
+    }
+
 
 }

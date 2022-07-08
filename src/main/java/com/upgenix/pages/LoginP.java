@@ -25,4 +25,8 @@ public class LoginP {
 
     @FindBy(xpath = "//span[@class='oe_topbar_name']")
     public WebElement dashboard;
+
+    @FindBy(className = "alert")
+    public WebElement alertErrorMessage;
+
 }

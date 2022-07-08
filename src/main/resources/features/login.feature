@@ -79,9 +79,34 @@ Feature: Upgenix app login feature
       |posmanager8@info.com   |po2sm232ger|
       |posmanager9@info.com   |posFkc@ma#$|
 
+  @C
+  #3- "Please fill out this field" message should be displayed if the password or username is empty
+  Scenario Outline: Users log in with invalid email or invalid password credentials
+    When User enters "<username>" username
+    And User clicks the login button
+    Then User sees "<Please fill out this field>" message
+    But User enters "<password>" username
+    And User clicks the login button
+    Then User sees "<Please fill out this field>" message
 
 
+    @SalesManager
+    Examples: SalesManager's username and password
+      |username               |password    |
+      |abcdefgh               |            |
+      |                       |salesmanager|
+      |salesmanager8@info.com |            |
+      |salesmanage28@info.com |            |
+      |                       |SaLeSMaNaGeR|
 
+    @PosManager
+    Examples: PosManager's username and password
+      |username               |password   |
+      |posmanager5@info.com   ||
+      |                       |posmanager |
+      |posmanger8@info.com    |           |
+      |                       |po2sm232ger|
+      |posmanager9@info.com   |           |
 
 
 

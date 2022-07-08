@@ -7,6 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -47,7 +48,13 @@ public class LoginSD {
 
     @Then("User sees error message")
     public void user_sees_error_message() {
-        
+        Assert.assertTrue(loginP.alertErrorMessage.isDisplayed());
+    }
+
+    @Then("User sees {string} field message")
+    public void user_sees_please_fill_out_this_field_message(String alertMessage) {
+        String message = Driver.getDriver().findElement(By.name("login")).getAttribute("validationMessage");
+        Assert.assertEquals(message, alertMessage);
     }
 
 

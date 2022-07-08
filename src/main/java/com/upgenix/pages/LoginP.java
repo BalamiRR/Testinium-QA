@@ -29,4 +29,6 @@ public class LoginP {
     @FindBy(className = "alert")
     public WebElement alertErrorMessage;
 
+    @FindBy(name="password")
+    public WebElement bulletPass;
 }

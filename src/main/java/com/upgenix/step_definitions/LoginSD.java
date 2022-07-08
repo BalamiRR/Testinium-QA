@@ -18,7 +18,7 @@ public class LoginSD {
 
     @Given("User is on the upgenix login page")
     public void user_is_on_the_upgenix_login_page() {
-        String expectedTitle = "Login | Best solution for startups";
+        //String expectedTitle = "Login | Best solution for startups";
         String url = ConfigurationReader.getProperty("web.table.url");
         Driver.getDriver().get(url);
     }
@@ -38,7 +38,7 @@ public class LoginSD {
         loginP.button.click();
     }
 
-    @Then("user should see the dashboard")
+    @Then("User should see the dashboard")
     public void user_should_see_the_dashboard() {
         wait.until(ExpectedConditions.visibilityOf(loginP.dashboard));
         String expectedDashboard = "Odoo";
@@ -57,5 +57,13 @@ public class LoginSD {
         Assert.assertEquals(expectedMessage, alertMessage);
     }
 
+    @Then("User should see the password in bullet signs")
+    public void user_should_see_the_password_in_bullet_signs() {
+        Assert.assertTrue(loginP.bulletPass.getAttribute("type").equals("password"));
+    }
 
+    @When("User clicks the enter button")
+    public void user_clicks_the_enter_button() {
+        loginP.button.click();
+    }
 }

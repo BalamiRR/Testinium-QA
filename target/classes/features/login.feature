@@ -1,5 +1,4 @@
-
-@Cydeo
+@Login
 Feature: Upgenix app login feature
   User Story:
   As a user, I should be able to login with correct credentials to different accounts.
@@ -14,12 +13,11 @@ Feature: Upgenix app login feature
     When User enters "<username>" username
     And User enters "<password>" password
     And User clicks the login button
-    Then user should see the dashboard
+    Then User should see the dashboard
 
     @SalesManager
     Examples: SalesManager's username and password
       |username               |password    |
-      |salesmanager6@info.com |salesmanager|
       |salesmanager7@info.com |salesmanager|
       |salesmanager8@info.com |salesmanager|
       |salesmanager9@info.com |salesmanager|
@@ -108,12 +106,31 @@ Feature: Upgenix app login feature
     Examples: SalesManager's username and password
       |password    |
       |saLesManager|
-      |salesmanager|
 
   @PosManager
     Examples: PosManager's username and password
       |password   |
-      |posmanager1|
-      |posmanager |
+      |posmanager|
+
+  @E
+  #6- Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
+  Scenario Outline: User tries whether enter button works on the login page.
+    When User enters "<username>" username
+    And User enters "<password>" password
+    And User clicks the enter button
+    Then User should see the dashboard
 
 
+  @SalesManager
+    Examples: SalesManager enter the button after mail and password
+      |username               |password    |
+      |salesmanager7@info.com |salesmanager|
+      |salesmanager8@info.com |salesmanager|
+      |salesmanager9@info.com |salesmanager|
+
+  @PosManager
+    Examples: PosManager enter the button after mail and password
+      |username               |password  |
+      |posmanager5@info.com   |posmanager|
+      |posmanager6@info.com   |posmanager|
+      |posmanager7@info.com   |posmanager|

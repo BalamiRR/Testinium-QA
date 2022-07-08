@@ -51,10 +51,10 @@ public class LoginSD {
         Assert.assertTrue(loginP.alertErrorMessage.isDisplayed());
     }
 
-    @Then("User sees {string} field message")
+    @Then("User sees {string} message")
     public void user_sees_please_fill_out_this_field_message(String alertMessage) {
-        String message = Driver.getDriver().findElement(By.name("login")).getAttribute("validationMessage");
-        Assert.assertEquals(message, alertMessage);
+        String expectedMessage = Driver.getDriver().findElement(By.name("login")).getAttribute("validationMessage");
+        Assert.assertEquals(expectedMessage, alertMessage);
     }
 
 

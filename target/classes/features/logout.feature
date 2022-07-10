@@ -34,4 +34,28 @@ Feature: Upgenix app logout feature
 
 
 
-#2- The user can not go to the home page again by clicking the step back button after successfully logged out.
+  #2- The user can not go to the home page again by clicking the step f button after successfully logged out.
+  @L
+  Scenario Outline: For the scenarios in the feature file, user is expected to be clicked the step back button on logout page
+    When User enters "<username>" username
+    And User enters "<password>" password
+    And User clicks the login button
+    And User should see the dashboard
+    And User click Log out option
+    And User should see the login dashboard
+    Then User can not click the step back button to go the home page
+
+    @SalesManager
+    Examples: SalesManager's username and password
+      |username               |password    |
+      |salesmanager7@info.com |salesmanager|
+      |salesmanager8@info.com |salesmanager|
+      |salesmanager9@info.com |salesmanager|
+
+    @PosManager
+    Examples: PosManager's username and password
+      |username               |password    |
+      |posmanager5@info.com   |posmanager  |
+      |posmanager6@info.com   |posmanager  |
+      |posmanager7@info.com   |posmanager  |
+

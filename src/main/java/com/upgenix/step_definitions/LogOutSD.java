@@ -26,4 +26,10 @@ public class LogOutSD {
         String actualDashboard = Driver.getDriver().getTitle();
         Assert.assertEquals("The title is not same as the expected! ", expectedDashboard, actualDashboard);
     }
+
+    @Then("User can not click the step back button to go the home page")
+    public void user_can_not_click_the_step_back_button_to_go_the_home_page() {
+        Driver.getDriver().navigate().back();
+        Assert.assertTrue(logOutP.warningMess.isDisplayed());
+    }
 }

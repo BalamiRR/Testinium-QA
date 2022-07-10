@@ -16,4 +16,7 @@ public class LogOutP {
 
     @FindBy(xpath = "//a[.='Log out']")
     public WebElement logOutButton;
+
+    @FindBy(xpath = "//div[@class= 'o_dialog_warning modal-body']")
+    public WebElement warningMess;
 }

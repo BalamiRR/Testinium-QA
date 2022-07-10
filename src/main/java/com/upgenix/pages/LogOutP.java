@@ -11,6 +11,9 @@ public class LogOutP {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[data-menu='logout']")
+    @FindBy(className = "o_user_menu")
+    public WebElement popUpButton;
+
+    @FindBy(xpath = "//a[.='Log out']")
     public WebElement logOutButton;
 }

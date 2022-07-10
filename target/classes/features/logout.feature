@@ -6,7 +6,7 @@ Feature: Upgenix app logout feature
   Accounts are: PosManager, SalesManager
 
   Background: For the scenarios in the feature file, user is expected to be on login page
-    Given User is on the upgenix logout page
+    Given User is on the upgenix login page
 
   @K
   #1- User can log out and ends up in login page.
@@ -15,7 +15,8 @@ Feature: Upgenix app logout feature
     And User enters "<password>" password
     And User clicks the login button
     And User should see the dashboard
-    Then User clicks the account icon and then click Log out option
+    And User click Log out option
+    Then User should see the login dashboard
     @SalesManager
     Examples: SalesManager's username and password
       |username               |password    |

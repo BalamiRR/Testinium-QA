@@ -1,4 +1,4 @@
-@Logout
+@LogOut
 Feature: Upgenix app logout feature
   User Story:
   As a user, I should be able to logout in login page.
@@ -8,8 +8,8 @@ Feature: Upgenix app logout feature
   Background: For the scenarios in the feature file, user is expected to be on login page
     Given User is on the upgenix login page
 
-  @K
   #1- User can log out and ends up in login page.
+  @UPGN-291
   Scenario Outline: For the scenarios in the feature file, user is expected to be on logout page
     When User enters "<username>" username
     And User enters "<password>" password
@@ -35,7 +35,7 @@ Feature: Upgenix app logout feature
 
 
   #2- The user can not go to the home page again by clicking the step f button after successfully logged out.
-  @L
+  @UPGN-292
   Scenario Outline: For the scenarios in the feature file, user is expected to be clicked the step back button on logout page
     When User enters "<username>" username
     And User enters "<password>" password

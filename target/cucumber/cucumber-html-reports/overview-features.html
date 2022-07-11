@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
+                90,
                 0,
-                6,
-                30,
+                0,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 36) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 90) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
-                6
+                12,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   1
+                   1,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>08 Jul 2022, 21:55</td>
+      <td>11 Jul 2022, 09:19</td>
     </tr>
   </tbody>
 </table>
@@ -325,52 +325,52 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_1144226092.html">Upgenix app logout feature</a></td>
 
-        <td >0</td>
-        <td      class="failed"    >6</td>
-        <td     class="skipped"   >30</td>
+        <td      class="passed"    >90</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">36</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">90</td>
 
+        <td  class="passed"    >12</td>
         <td >0</td>
-        <td  class="failed"    >6</td>
-        <td class="total">6</td>
+        <td class="total">12</td>
 
-        <td class="duration" data-value="20599000000">20.599</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="49955000000">49.955</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>0</td>
-      <td>6</td>
-      <td>30</td>
+      <td>90</td>
       <td>0</td>
       <td>0</td>
-      <td>36</td>
+      <td>0</td>
+      <td>0</td>
+      <td>90</td>
 
+      <td>12</td>
       <td>0</td>
-      <td>6</td>
-      <td>6</td>
+      <td>12</td>
 
-      <td class="duration">20.599</td>
+      <td class="duration">49.955</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>0.00%</td>
-      <td>16.67%</td>
-      <td>83.33%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
-      <td>0.00%</td>
       <td>100.00%</td>
-      <td></td>
-      <td></td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

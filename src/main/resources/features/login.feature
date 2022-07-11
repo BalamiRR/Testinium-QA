@@ -9,6 +9,7 @@ Feature: Upgenix app login feature
     Given User is on the upgenix login page
 
   #1-Users can log in with valid credentials (We have 5 types of users but will test only 2 user: PosManager, SalesManager)
+  @UPGN-286
   Scenario Outline: Users log in with valid credentials
     When User enters "<username>" username
     And User enters "<password>" password
@@ -51,8 +52,9 @@ Feature: Upgenix app login feature
       |posmanager18@info.com  |posmanager|
       |posmanager19@info.com  |posmanager|
 
-  @B
+
   #2-"Wrong login/password" should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials
+  @UPGN-287
   Scenario Outline: Users log in with invalid email or invalid password credentials
     When User enters "<username>" username
     And User enters "<password>" password
@@ -77,8 +79,9 @@ Feature: Upgenix app login feature
       |posmanager8@info.com   |po2sm232ger|
       |posmanager9@info.com   |posFkc@ma#$|
 
-  @C
+
   #3- "Please fill out this field" message should be displayed if the password or username is empty
+  @UPGN-288
   Scenario Outline:Users log in with invalid email or invalid password credentials
     When User enters "<password>" username
     And User clicks the login button
@@ -96,8 +99,9 @@ Feature: Upgenix app login feature
 
 
   #4- User land on the ‘reset password’ page after clicking on the "Reset password" link
-  @D
+
   #5-User should see the password in bullet signs by default
+  @UPGN-289
   Scenario Outline: User should see the password in bullet signs by default
     When User enters "<password>" password
     Then User should see the password in bullet signs
@@ -112,8 +116,9 @@ Feature: Upgenix app login feature
       |password   |
       |posmanager|
 
-  @E
+
   #6- Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
+  @UPGN-290
   Scenario Outline: User tries whether enter button works on the login page.
     When User enters "<username>" username
     And User enters "<password>" password

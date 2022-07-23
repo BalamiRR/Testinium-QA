@@ -32,8 +32,6 @@ Feature: Upgenix app logout feature
       |posmanager7@info.com   |posmanager  |
 
 
-
-
   #2- The user can not go to the home page again by clicking the step f button after successfully logged out.
   @UPGN-292
   Scenario Outline: For the scenarios in the feature file, user is expected to be clicked the step back button on logout page

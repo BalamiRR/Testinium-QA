@@ -1,5 +1,5 @@
 # Upgenix-QA
-Automating the Upgenix browser
+Automating the Upgenix browser  (JAVA, Selenium, Cucumber, JUnit, Jira, Jenkins)
 
 ### Tools
 

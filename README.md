@@ -28,6 +28,12 @@ Automating the Upgenix browser  (JAVA, Selenium, Cucumber, JUnit, Jira, Jenkins)
 </a> 
 </p>
 
+* JAVA
+* SELENIUM
+* CUCUMBER
+* JUNIT
+* JIRA
+* JENKINS
 
 ### Upgenix-QA
 

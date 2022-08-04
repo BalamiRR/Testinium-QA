@@ -87,10 +87,8 @@ import org.junit.runner.RunWith;
     tags = "@LogOut"
 )
 public class CukesRunner {
-
-
-
 }
+
 ```
 
 ### Develop automation scripts using BDD approach - Cucumber-Java

@@ -87,6 +87,7 @@ import org.junit.runner.RunWith;
     tags = "@LogOut"
 )
 public class CukesRunner {
+
 }
 
 ```
@@ -148,6 +149,9 @@ Feature: Upgenix app login feature
 ```
 
 
+### Jenkins Cucumber Reports
+![alt text](./image/Jenkins-Cucumber-Reports.png)
+
 ##### HTML Report:
 
 To generate HTML report use  `mvn test -Dcucumber.options="–plugin html:target/cucumber-reports.html"`
@@ -155,9 +159,6 @@ To generate HTML report use  `mvn test -Dcucumber.options="–plugin html:target
 ##### Txt Report:
 
 To generate a Txt report Use `mvn test -Dcucumber.options="–plugin rerun:target/rerun.txt"`
-
-### Jenkins Cucumber Reports
-![alt text](./image/Jenkins-Cucumber-Reports.png)
 
 ### Jira Test Execution
 

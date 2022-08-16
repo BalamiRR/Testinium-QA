@@ -156,9 +156,15 @@ To generate HTML report use  `mvn test -Dcucumber.options="–plugin html:target
 
 To generate a Txt report Use `mvn test -Dcucumber.options="–plugin rerun:target/rerun.txt"`
 
+### Jenkins Cucumber Reports
+![alt text](./image/Jenkins-Cucumber-Reports.png)
+
 ### Jira Test Execution
 
   ![alt text](./image/Jira-Test-Exectuion.png)
+  
+
+  
 
 ### THE END
 

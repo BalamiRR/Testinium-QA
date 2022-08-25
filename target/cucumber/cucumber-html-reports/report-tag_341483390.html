@@ -74,7 +74,11 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
+<<<<<<< HEAD
       <td>25 Aug 2022, 11:58</td>
+=======
+      <td>25 Aug 2022, 14:02</td>
+>>>>>>> e560522 (Merged)
     </tr>
   </tbody>
 </table>
@@ -127,19 +131,24 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@UPGN-291</td>
-          <td      class="passed"    >36</td>
           <td >0</td>
-          <td >0</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >35</td>
           <td >0</td>
           <td >0</td>
           <td class="total">36</td>
 
-          <td  class="passed"    >6</td>
           <td >0</td>
+          <td  class="failed"    >6</td>
           <td class="total">6</td>
 
+<<<<<<< HEAD
           <td class="duration" data-value="28271000000">28.271</td>
           <td class="passed">Passed</td>
+=======
+          <td class="duration" data-value="85000000">0.085</td>
+          <td class="failed">Failed</td>
+>>>>>>> e560522 (Merged)
         </tr>
         </tbody>
 
@@ -183,12 +192,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">9.186</span>
+=======
+  <span class="lead-duration duration">0.078</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -199,16 +212,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,15 +231,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager7@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.215</span>
+=======
+  <span class="lead-duration duration">0.076</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -234,6 +251,45 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+*** Element info: {Using=name, value=login}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.upgenix.step_definitions.LoginSD.user_enters_username(LoginSD.java:28)
+	at &#10045;.User enters &quot;salesmanager7@info.com&quot; username(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:14)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -249,11 +305,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.183</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -276,11 +336,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">6.460</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -303,11 +367,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.118</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -330,11 +398,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">2.198</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -357,11 +429,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.012</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -407,12 +483,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.407</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -423,16 +503,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-4" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -442,15 +522,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager8@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.168</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -473,11 +557,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.140</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -500,11 +588,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.214</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -527,11 +619,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.148</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -554,11 +650,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.696</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -581,11 +681,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.041</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -631,12 +735,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.911</span>
+=======
+  <span class="lead-duration duration">0.002</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -647,16 +755,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-6" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -666,15 +774,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager9@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.143</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -697,11 +809,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.175</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -724,11 +840,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.269</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -751,11 +871,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.091</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -778,11 +902,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">2.154</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -805,11 +933,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.079</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -855,12 +987,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.845</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -871,16 +1007,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-8" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -890,15 +1026,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;posmanager5@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.190</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -921,11 +1061,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;posmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.124</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -948,11 +1092,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.674</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -975,11 +1123,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.172</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1002,11 +1154,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.677</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1029,11 +1185,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.008</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1079,12 +1239,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.988</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -1095,16 +1259,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details ">
+  <div id="element-10" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1114,15 +1278,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details ">
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;posmanager6@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.192</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1145,11 +1313,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;posmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.153</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1172,11 +1344,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.742</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1199,11 +1375,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.073</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1226,11 +1406,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.820</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1253,11 +1437,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.008</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1303,12 +1491,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.934</span>
+=======
+  <span class="lead-duration duration">0.002</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-12">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -1319,16 +1511,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-12" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1338,15 +1530,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-12" class="inner-level collapse collapsable-details ">
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;posmanager7@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.159</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1369,11 +1565,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;posmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.150</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1396,11 +1596,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.295</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1423,11 +1627,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.065</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1450,11 +1658,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">2.256</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1477,11 +1689,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 

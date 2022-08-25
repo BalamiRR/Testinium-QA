@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Month;
+
 public class CalendarP {
     public CalendarP(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -27,6 +29,15 @@ public class CalendarP {
 
     @FindBy(xpath = "//button[.='Month']")
     public WebElement month;
+
+    @FindBy(className= "ui-state-highlight")
+    public WebElement dayCalendar;
+
+    @FindBy(xpath = "//td[@class=' ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today']")
+    public WebElement monthAndYearCalendar;
+
+    @FindBy(xpath = "//div[@class='o_control_panel']/ol/li")
+    public WebElement dateActual;
 
 
 }

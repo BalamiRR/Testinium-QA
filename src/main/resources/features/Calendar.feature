@@ -16,5 +16,10 @@ Feature: Upgenix app Calendar Module
     And User clicks on month button
     Then User should see the last stage of calendar view
 
+  Scenario: User can change display between Day-Week-Month
+    When User clicks on the calendar dashboard
+    And User clicks day on the calendar and display day
+    Then User clicks month on the calendar and display month
+
 
 

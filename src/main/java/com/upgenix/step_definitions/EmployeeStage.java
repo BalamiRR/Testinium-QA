@@ -13,30 +13,10 @@ public class EmployeeStage {
     EmployeeP employeePage = new EmployeeP();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(),3);
 
-    @When("User is on the upgenix login page")
-    public void user_is_on_the_upgenix_login_page() {
-        String url = ConfigurationReader.getProperty("url");
+    @When("User is on upgenix login page")
+    public void user_is_on_upgenix_login_page() {
+        String url = ConfigurationReader.getProperty("web.table.url");
         Driver.getDriver().get(url);
-    }
-
-    @When("User enters {string} username")
-    public void user_enters_username(String username) {
-        employeePage.inputLogin.sendKeys(username);
-    }
-
-    @When("User enters {string} password")
-    public void user_enters_password(String password) {
-        employeePage.inputPass.sendKeys(password);
-    }
-
-    @When("User clicks the login button")
-    public void user_clicks_the_login_button() {
-        employeePage.loginButton.click();
-    }
-
-    @Then("User should see the dashboard")
-    public void user_should_see_the_dashboard() {
-        Assert.assertTrue(Driver.getDriver().getTitle().equals("Odoo"));
     }
 
     @When("User is on the dashboard")

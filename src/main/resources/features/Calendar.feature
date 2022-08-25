@@ -10,16 +10,25 @@ Feature: Upgenix app Calendar Module
   Given User login to test other features
 
   Scenario: Verify that all buttons work as expected at the Calendar stage
-    When User clicks on the calendar dashboard
-    And User clicks on day button
-    And User clicks on week button
-    And User clicks on month button
+    When User click on the calendar dashboard
+    And User click on day button
+    And User click on week button
+    And User click on month button
     Then User should see the last stage of calendar view
 
   Scenario: User can change display between Day-Week-Month
-    When User clicks on the calendar dashboard
-    And User clicks day on the calendar and display day
-    Then User clicks month on the calendar and display month
+    When User click on the calendar dashboard
+    And User click day on the calendar and display day
+    Then User click month on the calendar and display month
 
+  Scenario Outline: User can create event by clicking on daily time box
+    When User click on the calendar dashboard
+    And User click day on the calendar and display day
+    And User click on desired date time
+    Then User enters "<test>" in the box and clicks the create button
+
+    Examples: Test name
+      |test       |
+      |Test test  |
 
 

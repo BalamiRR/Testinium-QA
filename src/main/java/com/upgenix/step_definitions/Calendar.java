@@ -3,6 +3,7 @@ package com.upgenix.step_definitions;
 import com.upgenix.pages.CalendarP;
 import com.upgenix.utilities.ConfigurationReader;
 import com.upgenix.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -14,25 +15,25 @@ public class Calendar {
     CalendarP calendarP = new CalendarP();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(),2);
 
-    @When("User clicks on the calendar dashboard")
+    @When("User click on the calendar dashboard")
     public void user_clicks_on_the_calendar_dashboard() throws InterruptedException {
         calendarP.calendarButton.click();
         wait.until(ExpectedConditions.visibilityOf(calendarP.calendarButton));
     }
 
-    @When("User clicks on day button")
+    @When("User click on day button")
     public void user_clicks_on_day_button() {
         calendarP.day.click();
         wait.until(ExpectedConditions.visibilityOf(calendarP.day));
     }
 
-    @When("User clicks on week button")
+    @When("User click on week button")
     public void user_clicks_on_week_button() {
         calendarP.week.click();
         wait.until(ExpectedConditions.visibilityOf(calendarP.week));
     }
 
-    @When("User clicks on month button")
+    @When("User click on month button")
     public void user_clicks_on_month_button() {
         calendarP.month.click();
         wait.until(ExpectedConditions.visibilityOf(calendarP.month));
@@ -46,9 +47,10 @@ public class Calendar {
         Assert.assertEquals("The title is not same as the expected!", expectedDashboard, actualDashboard);
     }
 
-    @When("User clicks day on the calendar and display day")
-    public void user_clicks_day_on_the_calendar_and_display_day() {
-
+    @When("User click day on the calendar and display day")
+    public void user_clicks_day_on_the_calendar_and_display_day() throws InterruptedException {
+        calendarP.day.click();
+        wait.until(ExpectedConditions.visibilityOf(calendarP.day));
         String dayCalendar = calendarP.dayCalendar.getText();
         int monthCalendar = Integer.parseInt(calendarP.monthAndYearCalendar.getAttribute("data-month")) + 1;
         int yearCalendar = Integer.parseInt(calendarP.monthAndYearCalendar.getAttribute("data-year"));
@@ -95,16 +97,84 @@ public class Calendar {
         }
 
         String expectedResult = "Meetings (" + month + " " + dayCalendar + ", " + yearCalendar + ")";
+        Thread.sleep(3000);
         String actualResult = calendarP.dateActual.getText();
-        System.out.println("expectedResult" +expectedResult);
-        System.out.println("actual:" +actualResult);
+        Assert.assertEquals(expectedResult,actualResult);
 
 
     }
 
-    @Then("User clicks month on the calendar and display month")
-    public void user_clicks_month_on_the_calendar_and_display_month() {
+    @Then("User click month on the calendar and display month")
+    public void user_click_month_on_the_calendar_and_display_month() throws InterruptedException {
+        calendarP.month.click();
+        wait.until(ExpectedConditions.visibilityOf(calendarP.month));
+        int monthCalendar = Integer.parseInt(calendarP.monthAndYearCalendar.getAttribute("data-month")) + 1;
+        int yearCalendar = Integer.parseInt(calendarP.monthAndYearCalendar.getAttribute("data-year"));
 
+        String month = "";
+
+        switch (monthCalendar) {
+            case 1:
+                month = "January";
+                break;
+            case 2:
+                month = "February";
+                break;
+            case 3:
+                month = "March";
+                break;
+            case 4:
+                month = "April";
+                break;
+            case 5:
+                month = "May";
+                break;
+            case 6:
+                month = "June";
+                break;
+            case 7:
+                month = "July";
+                break;
+            case 8:
+                month = "August";
+                break;
+            case 9:
+                month = "September";
+                break;
+            case 10:
+                month = "October";
+                break;
+            case 11:
+                month = "November";
+                break;
+            case 12:
+                month = "December";
+                break;
+        }
+
+        String expectedResult = "Meetings (" + month+ " "+ yearCalendar + ")";
+        Thread.sleep(3000);
+        String actualResult = calendarP.dateActual.getText();
+        Assert.assertEquals(expectedResult,actualResult);
     }
 
+    @And("User click on desired date time")
+    public void userClickOnDesiredDateTime() {
+        calendarP.dateBox.click();
+        Assert.assertTrue(calendarP.createNote.isDisplayed());
+    }
+
+    @Then("User enters {string} in the box and clicks the create button")
+    public void userEntersInTheBoxAndClicksTheCreateButton(String note) {
+
+        String eventName = note;
+
+        calendarP.summaryBox.sendKeys(note);
+        calendarP.createButton.click();
+
+        Assert.assertEquals(calendarP.getNote.getText(),eventName);
+
+
+
+    }
 }

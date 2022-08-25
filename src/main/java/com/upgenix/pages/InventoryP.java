@@ -11,9 +11,13 @@ public class InventoryP {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//title[.='Inventory - Odoo']")
+    @FindBy(partialLinkText = "Inventory")
     public WebElement inventoryModule;
 
+    @FindBy(partialLinkText = "Products")
+    public WebElement products;
 
+    @FindBy(className = "o_kanban_view o_kanban_ungrouped")
+    public WebElement isOnProductMod;
 
 }

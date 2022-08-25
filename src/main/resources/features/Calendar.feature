@@ -7,15 +7,9 @@ Feature: Upgenix app Calendar Module
               Anyone in the team can contribute and plan their agenda using the calendar.
               To prevent any conflict, events should be created, edited and displayed by all team members.
 
-    Given User is on the dashboard
-
-  Scenario: Verify that user first lands on weekly display
-    When User is on the calendar dashboard
-    And User clicks on Calender Module
-    Then User is on the Calender Module
-
+  Given User is on the upgenix login page
   Scenario: Verify that all buttons work as expected at the Calendar stage
-    When User is on the calendar dashboard
+    When User clicks on the calendar dashboard
     And User clicks on day button
     And User clicks on week button
     And User clicks on month button

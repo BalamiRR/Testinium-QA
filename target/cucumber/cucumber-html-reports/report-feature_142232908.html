@@ -74,7 +74,11 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
+<<<<<<< HEAD
       <td>25 Aug 2022, 11:58</td>
+=======
+      <td>25 Aug 2022, 14:02</td>
+>>>>>>> e560522 (Merged)
     </tr>
   </tbody>
 </table>
@@ -127,19 +131,24 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Upgenix app logout feature</td>
-          <td      class="passed"    >90</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >12</td>
+          <td     class="skipped"   >77</td>
           <td >0</td>
           <td >0</td>
           <td class="total">90</td>
 
-          <td  class="passed"    >12</td>
           <td >0</td>
+          <td  class="failed"    >12</td>
           <td class="total">12</td>
 
+<<<<<<< HEAD
           <td class="duration" data-value="76704000000">1:16.704</td>
           <td class="passed">Passed</td>
+=======
+          <td class="duration" data-value="7896000000">7.896</td>
+          <td class="failed">Failed</td>
+>>>>>>> e560522 (Merged)
         </tr>
         </tbody>
 
@@ -173,7 +182,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Upgenix app logout feature</span>
 
@@ -194,7 +203,11 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">14.275</span>
+=======
+  <span class="lead-duration duration">7.653</span>
+>>>>>>> e560522 (Merged)
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -237,7 +250,11 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">14.275</span>
+=======
+  <span class="lead-duration duration">7.653</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -279,12 +296,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">9.186</span>
+=======
+  <span class="lead-duration duration">0.078</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -295,16 +316,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -314,15 +335,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager7@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.215</span>
+=======
+  <span class="lead-duration duration">0.076</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -330,6 +355,45 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+*** Element info: {Using=name, value=login}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.upgenix.step_definitions.LoginSD.user_enters_username(LoginSD.java:28)
+	at &#10045;.User enters &quot;salesmanager7@info.com&quot; username(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:14)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -345,11 +409,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.183</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -372,11 +440,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">6.460</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -399,11 +471,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.118</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -426,11 +502,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">2.198</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -453,11 +533,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.012</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -495,12 +579,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.413</span>
+=======
+  <span class="lead-duration duration">0.010</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -511,16 +599,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-6" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -530,15 +618,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.413</span>
+=======
+  <span class="lead-duration duration">0.010</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -546,6 +638,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -580,12 +704,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.407</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -596,16 +724,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-9" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -615,15 +743,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager8@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.168</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -646,11 +778,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.140</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -673,11 +809,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.214</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -700,11 +840,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.148</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -727,11 +871,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.696</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -754,11 +902,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.041</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -796,12 +948,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.493</span>
+=======
+  <span class="lead-duration duration">0.009</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -812,16 +968,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -831,15 +987,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details ">
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.493</span>
+=======
+  <span class="lead-duration duration">0.009</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -847,6 +1007,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-13">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -881,12 +1073,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.911</span>
+=======
+  <span class="lead-duration duration">0.002</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-14">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -897,16 +1093,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-14" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -916,15 +1112,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-12" class="inner-level collapse collapsable-details ">
+  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager9@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.143</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -947,11 +1147,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.175</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -974,11 +1178,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.269</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1001,11 +1209,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.091</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1028,11 +1240,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">2.154</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1055,11 +1271,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.079</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1097,12 +1317,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.539</span>
+=======
+  <span class="lead-duration duration">0.010</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -1113,16 +1337,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details ">
+  <div id="element-16" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1132,15 +1356,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details ">
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.539</span>
+=======
+  <span class="lead-duration duration">0.010</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1148,6 +1376,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1182,12 +1442,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.845</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -1198,16 +1462,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-15" class="collapse collapsable-details ">
+  <div id="element-19" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1217,15 +1481,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-16" class="inner-level collapse collapsable-details ">
+  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;posmanager5@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.190</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1248,11 +1516,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;posmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.124</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1275,11 +1547,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.674</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1302,11 +1578,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.172</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1329,11 +1609,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.677</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1356,11 +1640,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.008</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1398,12 +1686,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.452</span>
+=======
+  <span class="lead-duration duration">0.010</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -1414,16 +1706,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-17" class="collapse collapsable-details ">
+  <div id="element-21" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1433,15 +1725,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-18" class="inner-level collapse collapsable-details ">
+  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.452</span>
+=======
+  <span class="lead-duration duration">0.010</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1449,6 +1745,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-23">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1483,12 +1811,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.988</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-24">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -1499,16 +1831,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details ">
+  <div id="element-24" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-25">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1518,15 +1850,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-20" class="inner-level collapse collapsable-details ">
+  <div id="steps-25" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;posmanager6@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.192</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1549,11 +1885,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;posmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.153</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1576,11 +1916,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.742</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1603,11 +1947,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.073</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1630,11 +1978,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.820</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1657,11 +2009,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.008</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1699,12 +2055,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.443</span>
+=======
+  <span class="lead-duration duration">0.020</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-26">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -1715,16 +2075,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details ">
+  <div id="element-26" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1734,15 +2094,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-22" class="inner-level collapse collapsable-details ">
+  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.443</span>
+=======
+  <span class="lead-duration duration">0.020</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1750,6 +2114,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1784,12 +2180,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">3.934</span>
+=======
+  <span class="lead-duration duration">0.002</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on logout page</span>
 
@@ -1800,16 +2200,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-23" class="collapse collapsable-details ">
+  <div id="element-29" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-30">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1819,15 +2219,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-24" class="inner-level collapse collapsable-details ">
+  <div id="steps-30" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;posmanager7@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.159</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1850,11 +2254,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;posmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.150</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1877,11 +2285,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.295</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1904,11 +2316,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.065</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1931,11 +2347,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">2.256</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -1958,11 +2378,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User should see the login dashboard</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2000,12 +2420,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.410</span>
+=======
+  <span class="lead-duration duration">0.011</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -2016,16 +2440,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-25" class="collapse collapsable-details ">
+  <div id="element-31" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2035,15 +2459,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-26" class="inner-level collapse collapsable-details ">
+  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.410</span>
+=======
+  <span class="lead-duration duration">0.011</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2051,6 +2479,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-33">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2085,12 +2545,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">4.943</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-34">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be clicked the step back button on logout page</span>
 
@@ -2101,16 +2565,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details ">
+  <div id="element-34" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-35">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2120,15 +2584,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-28" class="inner-level collapse collapsable-details ">
+  <div id="steps-35" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager7@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.177</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2151,11 +2619,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.143</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2178,11 +2650,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.140</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2205,11 +2681,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.066</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2232,11 +2712,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">2.155</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2259,11 +2743,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.013</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2286,11 +2774,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User can not click the step back button to go the home page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.249</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2328,12 +2820,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.735</span>
+=======
+  <span class="lead-duration duration">0.011</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-36">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -2344,16 +2840,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-29" class="collapse collapsable-details ">
+  <div id="element-36" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2363,15 +2859,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-30" class="inner-level collapse collapsable-details ">
+  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.735</span>
+=======
+  <span class="lead-duration duration">0.011</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2379,6 +2879,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-38">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2413,12 +2945,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">5.055</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-39">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be clicked the step back button on logout page</span>
 
@@ -2429,16 +2965,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-31" class="collapse collapsable-details ">
+  <div id="element-39" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-40">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2448,15 +2984,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-32" class="inner-level collapse collapsable-details ">
+  <div id="steps-40" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager8@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.249</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2479,11 +3019,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.150</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2506,11 +3050,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.184</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2533,11 +3081,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.060</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2560,11 +3112,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">2.421</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2587,11 +3143,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.009</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2614,11 +3174,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User can not click the step back button to go the home page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.982</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2656,12 +3220,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.512</span>
+=======
+  <span class="lead-duration duration">0.026</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-41">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -2672,16 +3240,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-33" class="collapse collapsable-details ">
+  <div id="element-41" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-42">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2691,15 +3259,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-34" class="inner-level collapse collapsable-details ">
+  <div id="steps-42" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.512</span>
+=======
+  <span class="lead-duration duration">0.026</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2707,6 +3279,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-43">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2741,12 +3345,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">4.224</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-44">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be clicked the step back button on logout page</span>
 
@@ -2757,16 +3365,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-35" class="collapse collapsable-details ">
+  <div id="element-44" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-45">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2776,15 +3384,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-36" class="inner-level collapse collapsable-details ">
+  <div id="steps-45" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager9@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.258</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2807,11 +3419,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;salesmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.212</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2834,11 +3450,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.003</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2861,11 +3481,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.070</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2888,11 +3512,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.779</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2915,11 +3543,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.009</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2942,11 +3574,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User can not click the step back button to go the home page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.893</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -2984,12 +3620,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.516</span>
+=======
+  <span class="lead-duration duration">0.016</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-46">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -3000,16 +3640,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-37" class="collapse collapsable-details ">
+  <div id="element-46" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-47">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3019,15 +3659,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-38" class="inner-level collapse collapsable-details ">
+  <div id="steps-47" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.516</span>
+=======
+  <span class="lead-duration duration">0.016</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3035,6 +3679,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-48">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -3069,12 +3745,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">5.457</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-49">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be clicked the step back button on logout page</span>
 
@@ -3085,16 +3765,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-39" class="collapse collapsable-details ">
+  <div id="element-49" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-40">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-50">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3104,15 +3784,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-40" class="inner-level collapse collapsable-details ">
+  <div id="steps-50" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;posmanager5@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.487</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3135,11 +3819,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;posmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.388</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3162,11 +3850,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.262</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3189,11 +3881,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.063</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3216,11 +3912,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">2.534</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3243,11 +3943,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.008</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3270,11 +3974,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User can not click the step back button to go the home page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.715</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3312,12 +4020,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.493</span>
+=======
+  <span class="lead-duration duration">0.010</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-51">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -3328,16 +4040,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-41" class="collapse collapsable-details ">
+  <div id="element-51" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-42">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-52">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3347,15 +4059,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-42" class="inner-level collapse collapsable-details ">
+  <div id="steps-52" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.493</span>
+=======
+  <span class="lead-duration duration">0.010</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3363,6 +4079,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-53">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -3397,12 +4145,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">4.191</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-54">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be clicked the step back button on logout page</span>
 
@@ -3413,16 +4165,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-43" class="collapse collapsable-details ">
+  <div id="element-54" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-55">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3432,15 +4184,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-44" class="inner-level collapse collapsable-details ">
+  <div id="steps-55" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;posmanager6@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.201</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3463,11 +4219,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;posmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.146</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3490,11 +4250,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.075</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3517,11 +4281,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.065</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3544,11 +4312,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.973</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3571,11 +4343,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.009</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3598,11 +4374,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User can not click the step back button to go the home page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.722</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3640,12 +4420,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.539</span>
+=======
+  <span class="lead-duration duration">0.020</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-45">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-56">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">For the scenarios in the feature file, user is expected to be on login page</span>
 
@@ -3656,16 +4440,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-45" class="collapse collapsable-details ">
+  <div id="element-56" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-46">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-57">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3675,15 +4459,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-46" class="inner-level collapse collapsable-details ">
+  <div id="steps-57" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User is on the upgenix login page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.539</span>
+=======
+  <span class="lead-duration duration">0.020</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3691,6 +4479,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-58">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FUAT', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\fuatk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dc37d036d6b97c3ffa28911b3cc0d8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.upgenix.step_definitions.LoginSD.user_is_on_the_upgenix_login_page(LoginSD.java:23)
+	at &#10045;.User is on the upgenix login page(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/Logout.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -3725,12 +4545,16 @@ $(document).ready(function() {
 </div>
 
 
+<<<<<<< HEAD
   <span class="lead-duration duration">4.743</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-47">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-59">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">For the scenarios in the feature file, user is expected to be clicked the step back button on logout page</span>
 
@@ -3741,16 +4565,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-47" class="collapse collapsable-details ">
+  <div id="element-59" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-48">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-60">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3760,15 +4584,19 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-48" class="inner-level collapse collapsable-details ">
+  <div id="steps-60" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;posmanager7@info.com&quot;</span> username</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.280</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3791,11 +4619,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User enters <span class="argument">&quot;posmanager&quot;</span> password</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.169</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3818,11 +4650,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User clicks the login button</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.202</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3845,11 +4681,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.059</span>
+=======
+  <span class="lead-duration duration">0.001</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3872,11 +4712,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User click Log out option</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.980</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3899,11 +4743,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should see the login dashboard</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">0.010</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 
@@ -3926,11 +4774,15 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User can not click the step back button to go the home page</span>
 
+<<<<<<< HEAD
   <span class="lead-duration duration">1.043</span>
+=======
+  <span class="lead-duration duration">0.000</span>
+>>>>>>> e560522 (Merged)
 
 </div>
 

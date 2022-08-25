@@ -4,6 +4,7 @@ Feature: Upgenix app Employees module
   Account is: PosManager
   Background: As a Posmanager, I should be able to create and edit a new employee from "Employees" module
 
+<<<<<<< HEAD
   @UPGN-339
   Scenario Outline: User enters posmanager info
     When User is on the upgenix login page
@@ -16,6 +17,8 @@ Feature: Upgenix app Employees module
       | username              | password   |
       | posmanager50@info.com | posmanager |
 
+=======
+>>>>>>> main
   @UPGN-340
   Scenario: Verify that all buttons work as expected at the employees stage
     When User is on the dashboard

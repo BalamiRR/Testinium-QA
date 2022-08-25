@@ -12,27 +12,30 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Calendar {
 
     CalendarP calendarP = new CalendarP();
-
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(),3);
 
     @When("User clicks on the calendar dashboard")
-    public void user_clicks_on_the_calendar_dashboard(){
+    public void user_clicks_on_the_calendar_dashboard() throws InterruptedException {
         calendarP.calendarButton.click();
+        wait.until(ExpectedConditions.visibilityOf(calendarP.calendarButton));
     }
 
     @When("User clicks on day button")
     public void user_clicks_on_day_button() {
         calendarP.day.click();
+        wait.until(ExpectedConditions.visibilityOf(calendarP.day));
     }
 
     @When("User clicks on week button")
     public void user_clicks_on_week_button() {
-        calendarP.month.click();
+        calendarP.week.click();
+        wait.until(ExpectedConditions.visibilityOf(calendarP.week));
     }
 
     @When("User clicks on month button")
     public void user_clicks_on_month_button() {
         calendarP.month.click();
+        wait.until(ExpectedConditions.visibilityOf(calendarP.month));
     }
 
     @Then("User should see the last stage of calendar view")

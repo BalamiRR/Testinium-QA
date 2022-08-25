@@ -23,9 +23,10 @@ public class CalendarP {
     public WebElement day;
 
     @FindBy(xpath = "//button[.='Week']")
-    public WebElement month;
+    public WebElement week;
 
     @FindBy(xpath = "//button[.='Month']")
-    public WebElement year;
+    public WebElement month;
+
 
 }

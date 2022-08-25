@@ -17,7 +17,14 @@ public class InventoryP {
     @FindBy(partialLinkText = "Products")
     public WebElement products;
 
-    @FindBy(className = "o_kanban_view o_kanban_ungrouped")
-    public WebElement isOnProductMod;
+    @FindBy(className = "o-kanban-button-new")
+    public WebElement createBtn;
+
+    @FindBy(className = "o_form_button_save")
+    public WebElement saveBtn;
+
+    @FindBy(className = "o_notification_manager")
+    public WebElement fieldError;
+
 
 }

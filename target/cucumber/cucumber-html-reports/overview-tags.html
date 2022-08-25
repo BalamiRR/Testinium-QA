@@ -53,7 +53,7 @@ $(document).ready(function() {
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00, ] 
+                data:  [ 66.67, ] 
             },
             {
                 label: "Failed",
@@ -63,7 +63,7 @@ $(document).ready(function() {
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00, ] 
+                data:  [ 16.67, ] 
             },
             {
                 label: "Pending",
@@ -73,7 +73,7 @@ $(document).ready(function() {
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00, ] 
+                data:  [ 16.67, ] 
             }
         ]
     };
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>25 Aug 2022, 17:34</td>
+      <td>25 Aug 2022, 18:13</td>
     </tr>
   </tbody>
 </table>
@@ -199,17 +199,17 @@ $(document).ready(function() {
 
         <td      class="passed"    >4</td>
         <td >0</td>
+        <td     class="skipped"   >1</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">4</td>
+        <td   class="undefined" >1</td>
+        <td class="total">6</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2126000000">2.126</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="6232000000">6.232</td>
+        <td class="failed">Failed</td>
       </tr>
   </tbody>
 
@@ -218,31 +218,31 @@ $(document).ready(function() {
       <td></td>
       <td>4</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-
       <td>1</td>
       <td>0</td>
       <td>1</td>
+      <td>6</td>
 
-      <td class="duration">2.126</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+
+      <td class="duration">6.232</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
+      <td>66.67%</td>
       <td>0.00%</td>
+      <td>16.67%</td>
       <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>16.67%</td>
       <td></td>
-      <td>100.00%</td>
       <td>0.00%</td>
-      <td></td>
-      <td></td>
       <td>100.00%</td>
+      <td></td>
+      <td></td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

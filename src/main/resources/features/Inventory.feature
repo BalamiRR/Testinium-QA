@@ -6,15 +6,21 @@ Feature: Upgenix app Inventory feature
   I can select the Product type, I can set prices (cost & sales), I can give a barcode to the product.
   I can set a product picture.
 
-    Given User login to test other features
+  Given User login to test other features
 
-  @Deneme
   Scenario: Verify that User can reach New Products Form by clicking Inventory --> Products --> Create
     When Logged user clicks on Inventory Module
     And User clicks on Product module
     And User see the products
-    And User clicks create button
+    Then User clicks create button
 
+  Scenario:Verify that if Product name field leaves blank, an error message "The following fields are invalid:" is appeared
+    When Logged user clicks on Inventory Module
+    And User clicks on Product module
+    And User see the products
+    Then User clicks create button
+    And User clicks the save button without entering any info
+    Then User should see the error
 
 
 

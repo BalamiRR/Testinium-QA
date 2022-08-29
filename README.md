@@ -82,7 +82,7 @@ import org.junit.runner.RunWith;
         "me.jvt.cucumber.report.PrettyReports:target/cucumber"
     },
     features = "src/main/resources/features",
-    glue = "com/Testinium/step_definitions",
+    glue = "com/testinium/step_definitions",
     dryRun = false,
     tags = "@LogOut"
 )

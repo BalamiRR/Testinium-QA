@@ -31,4 +31,10 @@ public class InventoryP {
 
     @FindBy(xpath = "//span[.='EY']")
     public WebElement productsList;
+
+    @FindBy(xpath = "//span[@class='o_field_char o_field_widget o_required_modifier']")
+    public WebElement createdProduct;
+
+
+
 }

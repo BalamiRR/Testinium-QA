@@ -1,5 +1,5 @@
-# Upgenix-QA
-Automating the Upgenix browser  (JAVA, Selenium, Cucumber, JUnit, Jira, Jenkins)
+# Testinium-QA
+Automating the Testinium browser  (JAVA, Selenium, Cucumber, JUnit, Jira, Jenkins)
 
 ### Tools
 
@@ -35,9 +35,9 @@ Automating the Upgenix browser  (JAVA, Selenium, Cucumber, JUnit, Jira, Jenkins)
 * JIRA
 * JENKINS
 
-### Upgenix-QA
+### Testinium-QA
 
-This repository contains a collection of sample `Upgenix-QA` projects and libraries that demonstrate how to
+This repository contains a collection of sample `Testinium-QA` projects and libraries that demonstrate how to
 use the tool and develop automation script using the Cucumber BDD framework with Java as programming language.
 It generate JSON, HTML and Txt reporters as well. It also generate `screen shots` for your tests if you enable it and
 also generate `error shots` for your failed test cases as well.
@@ -56,11 +56,11 @@ also generate `error shots` for your failed test cases as well.
 
 Git:
 
-    git clone https://github.com/BalamiRR/Upgenix-QA.git
+    git clone https://github.com/BalamiRR/Testinium-QA.git
  
 Manually :
 
-Fork / Clone repository from [here](https://github.com/BalamiRR/Upgenix-QA/archive/main.zip) or download zip and set
+Fork / Clone repository from [here](https://github.com/BalamiRR/Testinium-QA/archive/main.zip) or download zip and set
 it up in your local workspace.
 
 
@@ -82,7 +82,7 @@ import org.junit.runner.RunWith;
         "me.jvt.cucumber.report.PrettyReports:target/cucumber"
     },
     features = "src/main/resources/features",
-    glue = "com/upgenix/step_definitions",
+    glue = "com/Testinium/step_definitions",
     dryRun = false,
     tags = "@LogOut"
 )
@@ -102,14 +102,14 @@ Here is one of the scenarios:
 
 ```
 @Login
-Feature: Upgenix app login feature
+Feature: Testinium app login feature
   User Story:
   As a user, I should be able to login with correct credentials to different accounts.
 
   Accounts are: PosManager, SalesManager
 
   Background: For the scenarios in the feature file, user is expected to be on login page
-    Given User is on the upgenix login page
+    Given User is on the Testinium login page
 
   #1-Users can log in with valid credentials (We have 5 types of users but will test only 2 user: PosManager, SalesManager)
   @UPGN-286

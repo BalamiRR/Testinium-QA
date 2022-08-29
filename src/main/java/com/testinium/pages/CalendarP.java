@@ -39,5 +39,40 @@ public class CalendarP {
     @FindBy(xpath = "//div[@class='o_control_panel']/ol/li")
     public WebElement dateActual;
 
+    @FindBy(xpath = "(//td[@class='fc-widget-content'])[29]")
+    public WebElement dateBox;
+
+    @FindBy(xpath = "//div[@class='modal-header']")
+    public WebElement createNote;
+
+    @FindBy(xpath = "//input[@name='name']")
+    public WebElement summaryBox;
+
+    @FindBy(xpath= "//button[@class='btn btn-sm btn-primary']")
+    public WebElement createButton;
+
+    @FindBy(xpath = "//div[@class='o_field_name o_field_type_char']")
+    public WebElement getNote;
+
+    @FindBy(className = "o_field_name")
+    public WebElement createdNote;
+
+    @FindBy(xpath = "//button[@class='btn btn-sm btn-primary']")
+    public WebElement editButton;
+
+    @FindBy(id = "o_field_input_46")
+    public WebElement editText;
+
+    @FindBy(xpath = "//div[@class='modal-content']")
+    public WebElement createdModele;
+
+    @FindBy(id = "o_field_input_59")
+    public WebElement tagsCheckbox;
+
+    @FindBy(xpath = "//span[.='Save']")
+    public WebElement saveButton;
+
+    @FindBy(xpath = "//div[@class='o_field_name o_field_type_char']")
+    public WebElement selectNote;
 
 }

@@ -15,7 +15,11 @@ import org.junit.runner.RunWith;
     features = "src/main/resources/features",
     glue = "com/testinium/step_definitions",
     dryRun = false,
+<<<<<<< HEAD:src/main/java/com/testinium/runners/CukesRunner.java
     tags = "@Deneme"
+=======
+    tags = "@Calendar"
+>>>>>>> feature/calendar:src/main/java/com/upgenix/runners/CukesRunner.java
 )
 public class CukesRunner {
 

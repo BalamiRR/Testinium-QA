@@ -36,5 +36,4 @@ public class InventoryP {
     public WebElement createdProduct;
 
 
-
 }

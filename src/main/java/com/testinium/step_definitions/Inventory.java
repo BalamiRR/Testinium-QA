@@ -13,8 +13,7 @@ public class Inventory {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 20);
 
     @When("Logged user clicks on Inventory Module")
-    public void logged_user_clicks_on_inventory_module() throws InterruptedException {
-        Thread.sleep(3000);
+    public void logged_user_clicks_on_inventory_module() {
         inventory.inventoryModule.click();
     }
 
@@ -59,13 +58,6 @@ public class Inventory {
     public void user_sees_the_created_product() {
         inventory.createdProduct.isDisplayed();
     }
-
-
-
-
-
-
-
 
 
 

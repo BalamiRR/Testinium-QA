@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-file:src/main/resources/features/Calendar.feature:19
-=======
-file:src/main/resources/features/Inventory.feature:10
->>>>>>> ff8a577962c0aa66ebcf89757f78f91bb5287304
-=======
->>>>>>> 1cef7ce (Inventory scenarios were updated)

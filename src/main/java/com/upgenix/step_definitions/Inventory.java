@@ -18,16 +18,20 @@ public class Inventory {
 
     @When("Logged user clicks on Inventory Module")
     public void logged_user_clicks_on_inventory_module() {
+        inventory.inventoryModule.click();
     }
 
     @When("User clicks on Product module")
     public void user_clicks_on_product_module() {
+        wait.until(ExpectedConditions.visibilityOf(inventory.products));
+        inventory.inventoryModule.click();
 
     }
     @When("User see the products")
     public void user_see_the_products() {
-
+        Driver.getDriver().getTitle().equals("Products - Odoo");
     }
+
     @When("User clicks create button")
     public void user_clicks_create_button() {
 

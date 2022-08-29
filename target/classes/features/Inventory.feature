@@ -21,8 +21,7 @@ Feature: Testinium app Inventory feature
     And User clicks create button
     And User enters Product Name
     And User clicks the save button
-    And User clicks on Product module
-    Then User should see the title includes the Product Name
+    Then User sees the created Product
 
   Scenario:Verify that if Product name field leaves blank, an error message 'The following fields are invalid:' is appeared
     When Logged user clicks on Inventory Module
@@ -32,8 +31,13 @@ Feature: Testinium app Inventory feature
     Then User should see the error
 
   Scenario: Verify that the user should be able to see created Product is listed after clicking the Products module.
-
-
+    When Logged user clicks on Inventory Module
+    And User clicks on Product module
+    And User clicks create button
+    And User enters Product Name
+    And User clicks the save button
+    And User clicks on Product module
+    Then User should see the title includes the Product Name
 #
 #Verify that the user should be able to see created Product is listed after clicking the Products module.
 #

@@ -55,7 +55,10 @@ public class Inventory {
         inventory.productsList.isDisplayed();
     }
 
-
+    @Then("User sees the created Product")
+    public void user_sees_the_created_product() {
+        inventory.createdProduct.isDisplayed();
+    }
 
 
 

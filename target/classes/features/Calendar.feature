@@ -31,4 +31,18 @@ Feature: Upgenix app Calendar Module
       |test       |
       |Test test  |
 
+  Scenario: User can edit a created event
+    When User click on the calendar dashboard
+    And User click day on the calendar and display day
+    And User click on desired date time
+    And User enters "Test" in the box and clicks the create button
+    And User can see all the note
+    And User can select the note
+    And User can edit the information
+    Then User can save all edit
+
+
+
+
+
 

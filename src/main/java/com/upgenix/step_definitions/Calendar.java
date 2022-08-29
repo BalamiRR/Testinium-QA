@@ -173,8 +173,33 @@ public class Calendar {
         calendarP.createButton.click();
 
         Assert.assertEquals(calendarP.getNote.getText(),eventName);
+    }
 
+    @When("User can see all the note")
+    public void user_can_see_all_the_note() {
+        Assert.assertTrue(calendarP.createdNote.isDisplayed());
+    }
+    @When("User can select the note")
+    public void user_can_select_the_note() {
+        calendarP.selectNote.click();
+        wait.until(ExpectedConditions.visibilityOf(calendarP.selectNote));
+        Assert.assertTrue(calendarP.createdModele.isDisplayed());
+    }
+    @When("User can edit the information")
+    public void user_can_edit_the_information() {
+        calendarP.editButton.click();
+        wait.until(ExpectedConditions.visibilityOf(calendarP.editButton));
+        calendarP.editText.clear();
+        calendarP.editText.sendKeys("Hello My Friends");
+        wait.until(ExpectedConditions.visibilityOf(calendarP.editText));
+        calendarP.tagsCheckbox.isSelected();
 
 
     }
+    @Then("User can save all edit")
+    public void user_can_save_all_edit() {
+        calendarP.saveButton.click();
+    }
+
+
 }

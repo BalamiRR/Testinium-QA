@@ -1,5 +1,5 @@
 @UPGN-344
-Feature: Upgenix app Employees module
+Feature: .... app Employees module
 
   Account is: PosManager
   Background: As a Posmanager, I should be able to create and edit a new employee from "Employees" module

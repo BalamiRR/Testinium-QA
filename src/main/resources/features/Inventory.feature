@@ -1,5 +1,5 @@
 
-Feature: Upgenix app Inventory feature
+Feature: .... app Inventory feature
   User Story:
   Background: As a Posmanager, should be able to check and edit the Inventory of the company.
   So that I can list all products in the company, I can add new products to inventory,

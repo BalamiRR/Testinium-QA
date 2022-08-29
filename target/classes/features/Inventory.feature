@@ -1,4 +1,4 @@
-Feature: Upgenix app Inventory feature
+Feature: Testinium app Inventory feature
 
   User Story:
   Background: As a Posmanager, should be able to check and edit the Inventory of the company.
@@ -12,25 +12,28 @@ Feature: Upgenix app Inventory feature
     When Logged user clicks on Inventory Module
     And User clicks on Product module
     And User see the products
-    Then User clicks create button
+    And User clicks create button
+    Then User should see the dashboard
 
-  Scenario:Verify that if Product name field leaves blank, an error message "The following fields are invalid:" is appeared
+  Scenario: Verify that after creating a Product, the page title includes the Product name.
     When Logged user clicks on Inventory Module
     And User clicks on Product module
-    And User see the products
-    Then User clicks create button
-    And User clicks the save button without entering any info
+    And User clicks create button
+    And User enters Product Name
+    And User clicks the save button
+    And User clicks on Product module
+    Then User should see the title includes the Product Name
+
+  Scenario:Verify that if Product name field leaves blank, an error message 'The following fields are invalid:' is appeared
+    When Logged user clicks on Inventory Module
+    And User clicks on Product module
+    And User clicks create button
+    And User clicks the save button
     Then User should see the error
 
+  Scenario: Verify that the user should be able to see created Product is listed after clicking the Products module.
 
 
-
-
-
-#
-#Verify that if Product name field leaves blank, an error message "The following fields are invalid:" is appeared.
-#
-#Verify that after creating a Product, the page title includes the Product name.
 #
 #Verify that the user should be able to see created Product is listed after clicking the Products module.
 #

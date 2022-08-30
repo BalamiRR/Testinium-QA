@@ -12,5 +12,6 @@ Feature: .... app Sales feature
     When User click on the sales dashboard
     And User click customers button
     And User can create the customer
-    Then User can save the customer
+    And User can save the customer
+    Then User can find his name from search bar
 

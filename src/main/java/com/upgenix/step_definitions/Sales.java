@@ -5,6 +5,7 @@ import com.upgenix.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -39,23 +40,40 @@ public class Sales {
     public void user_can_create_the_customer() throws InterruptedException {
         salesp.createButton.click();
         wait.until(ExpectedConditions.visibilityOf(salesp.createButton));
-        salesp.customerName.sendKeys("John Lennon");
+        salesp.customerName.sendKeys("Loue");
         salesp.address.sendKeys("1 boulevard auguste rodin 75000");
         salesp.stateOptions.click();
         salesp.createAndEditState.click();
-        salesp.stateName.sendKeys("Paris");
-        salesp.stateCode.sendKeys("75000");
+        salesp.stateName.sendKeys("Albania");
+        salesp.stateCode.sendKeys("81");
         salesp.countryStateButton.click();
         salesp.countrySelection.click();
 
     }
-    @Then("User can save the customer")
+    @When("User can save the customer")
     public void user_can_save_the_customer() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        salesp.saveButton.click();
+        wait.until(ExpectedConditions.visibilityOf(salesp.saveButton));
+        salesp.createCustomer.click();
+        wait.until(ExpectedConditions.visibilityOf(salesp.createCustomer));
+        salesp.customersButton.click();
+        wait.until(ExpectedConditions.visibilityOf(salesp.customersButton));
+
     }
 
 
+    @Then("User can find his name from search bar")
+    public void userCanFindHisNameFromSearchBar() {
+
+        salesp.searchBar.sendKeys("Loue"+ Keys.ENTER);
+        wait.until(ExpectedConditions.visibilityOf(salesp.searchBar));
+
+        String actualName = "Loue";
+        String expectedName = salesp.nameCheck.getText();
+
+        System.out.println("actualName = " + actualName);
+        System.out.println("expectedName = " + expectedName);
 
 
+    }
 }

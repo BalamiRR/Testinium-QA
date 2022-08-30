@@ -1,5 +1,6 @@
 package com.upgenix.pages;
 
+import com.sun.tracing.dtrace.FunctionName;
 import com.upgenix.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -33,21 +34,34 @@ public class SalesP {
     @FindBy(xpath = "//input[@id='o_field_input_477']")
     public WebElement stateOptions;
 
-    @FindBy(xpath = "//li[@id='ui-id-31']/a")
+    @FindBy(xpath = "//li[.='Create and Edit...']")
     public WebElement createAndEditState;
 
-    @FindBy(xpath = "//input[@id='o_field_input_1708']")
+    @FindBy(xpath = "//input[@id='o_field_input_516']")
     public WebElement stateName;
 
-    @FindBy(xpath = "//input[@id='o_field_input_1709']")
+    @FindBy(xpath = "//input[@id='o_field_input_517']")
     public WebElement stateCode;
 
-    @FindBy(xpath = "//input[@id='o_field_input_1710']")
+    @FindBy(xpath = "//input[@id='o_field_input_518']")
     public  WebElement countryStateButton;
 
-    @FindBy(xpath = "//li[@id='ui-id-222']/a")
+    @FindBy(xpath = "//li[@id='ui-id-30']/a")
     public  WebElement countrySelection;
 
+    @FindBy(xpath = "//button[@class='btn btn-sm btn-primary']/span")
+    public  WebElement saveButton;
 
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
+    public WebElement createCustomer;
+
+    @FindBy(xpath = "//input[@class='o_searchview_input']")
+    public WebElement searchBar;
+
+    @FindBy(xpath = "//strong[@class='o_kanban_record_title oe_partner_heading']/span")
+    public WebElement nameCheck;
+
+    @FindBy(xpath = "//button[@class='btn btn-sm btn-primary']")
+    public WebElement warningButton;
 
 }

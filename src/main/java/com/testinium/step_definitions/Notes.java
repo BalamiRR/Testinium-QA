@@ -7,6 +7,7 @@ import com.testinium.pages.InventoryP;
 import com.testinium.pages.NotesP;
 import com.testinium.utilities.Driver;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -69,5 +70,24 @@ public class Notes {
     public void user_should_see_the_notes_list() {
         wait.until(ExpectedConditions.visibilityOf(notesP.notesModule));
         notesP.notesModule.click();
+        Assert.assertTrue(notesP.notesModule.isDisplayed());
+    }
+
+    @When("User move element from New section to Today section")
+    public void user_move_element_from_new_section_to_today_section() {
+        Actions actions = new Actions(Driver.getDriver());
+
+        actions.clickAndHold(notesP.newTable).pause(2000).moveToElement(notesP.todayTable).pause(2000).release().perform();
+
+        String actualTable = notesP.todayTable.getText();
+        String expectedTable = "";
+
+        Assert.assertEquals(actualTable, expectedTable);
+
+    }
+
+    @Then("User sees Today new added element")
+    public void user_sees_today_new_added_element() {
+
     }
 }

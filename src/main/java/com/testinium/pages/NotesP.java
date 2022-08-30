@@ -35,4 +35,10 @@ public class NotesP {
     @FindBy(xpath = "//span[.='BDD Approach Framework with Cucumber']")
     public WebElement appK;
 
+    @FindBy(xpath = "(//div[@data-id='1193']/div)[2]")
+    public WebElement newTable;
+    
+    @FindBy(xpath = "(//div[@data-id='1194']/div)[1]")
+    public WebElement todayTable;
+
 }

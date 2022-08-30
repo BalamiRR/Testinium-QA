@@ -78,16 +78,13 @@ public class Notes {
         Actions actions = new Actions(Driver.getDriver());
 
         actions.clickAndHold(notesP.newTable).pause(2000).moveToElement(notesP.todayTable).pause(2000).release().perform();
-
-        String actualTable = notesP.todayTable.getText();
-        String expectedTable = "";
-
-        Assert.assertEquals(actualTable, expectedTable);
-
     }
 
     @Then("User sees Today new added element")
     public void user_sees_today_new_added_element() {
+        String actualTable = notesP.todayTable.getText();
+        String expectedTable = "Today";
 
+        Assert.assertEquals(actualTable, expectedTable);
     }
 }

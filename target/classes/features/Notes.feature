@@ -27,4 +27,3 @@ Feature: Testinium app login feature
     When User clicks the Notes module
     And User move element from New section to Today section
     Then User sees Today new added element
-

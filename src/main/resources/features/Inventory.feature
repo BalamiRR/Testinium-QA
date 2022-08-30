@@ -38,12 +38,6 @@ Feature: Testinium app Inventory feature
     And User clicks the save button
     And User clicks on Product module
     Then User should see the title includes the Product Name
-#
-#Verify that the user should be able to see created Product is listed after clicking the Products module.
-#
-#As a PosManager, I should be able to check and edit the Inventory of the company. So that I can list all products in the company, I can add new products to inventory, I can select the Product type, I can set prices (cost & sales), I can give a barcode to the product. I can set a product picture.
-
-
 
 
 

@@ -1,5 +1,5 @@
 @LogOut
-Feature: Upgenix app logout feature
+Feature: Testinium app logout feature
   User Story:
   As a user, I should be able to logout in login page.
 

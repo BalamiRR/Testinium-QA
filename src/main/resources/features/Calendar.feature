@@ -1,6 +1,5 @@
 @Calendar
-Feature: Upgenix app Calendar Module
-
+Feature: Testinium app Calendar Module
 
   Account is: PosManager
   Background: As a Posmanager, I should be able to create and to see my meetings and events on my calendar from "Calendar" module

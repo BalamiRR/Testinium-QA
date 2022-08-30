@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 file:src/main/resources/features/Calendar.feature:19
 =======
 file:src/main/resources/features/Inventory.feature:10
@@ -10,3 +11,5 @@ file:src/main/resources/features/Inventory.feature:10
 =======
 file:src/main/resources/features/Calendar.feature:12:19:32
 >>>>>>> feature/calendar
+=======
+>>>>>>> feature/Notes

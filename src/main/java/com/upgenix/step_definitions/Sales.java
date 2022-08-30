@@ -2,6 +2,7 @@ package com.upgenix.step_definitions;
 
 import com.upgenix.pages.SalesP;
 import com.upgenix.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -40,12 +41,12 @@ public class Sales {
     public void user_can_create_the_customer() throws InterruptedException {
         salesp.createButton.click();
         wait.until(ExpectedConditions.visibilityOf(salesp.createButton));
-        salesp.customerName.sendKeys("Loue");
+        salesp.customerName.sendKeys("Lucas");
         salesp.address.sendKeys("1 boulevard auguste rodin 75000");
         salesp.stateOptions.click();
         salesp.createAndEditState.click();
         salesp.stateName.sendKeys("Albania");
-        salesp.stateCode.sendKeys("81");
+        salesp.stateCode.sendKeys("78");
         salesp.countryStateButton.click();
         salesp.countrySelection.click();
 
@@ -64,11 +65,10 @@ public class Sales {
 
     @Then("User can find his name from search bar")
     public void userCanFindHisNameFromSearchBar() {
-
-        salesp.searchBar.sendKeys("Loue"+ Keys.ENTER);
+        salesp.searchBar.sendKeys("Lucas"+ Keys.ENTER);
         wait.until(ExpectedConditions.visibilityOf(salesp.searchBar));
 
-        String actualName = "Loue";
+        String actualName = "Lucas";
         String expectedName = salesp.nameCheck.getText();
 
         System.out.println("actualName = " + actualName);
@@ -76,4 +76,24 @@ public class Sales {
 
 
     }
+
+    @And("User can create new customer")
+    public void userCanCreateNewCustomer() {
+        salesp.createButton.click();
+        wait.until(ExpectedConditions.visibilityOf(salesp.createButton));
+        salesp.createCustomer.click();
+    }
+
+    @Then("User can get the error")
+    public void userCanGetTheError() {
+
+        String actualWarning = "The following fields are invalid:";
+        String expectedWarning = salesp.warning.getText();
+
+        System.out.println("actualWarning = " + actualWarning);
+        System.out.println("expectedWarning = " + expectedWarning);
+
+    }
+
+
 }

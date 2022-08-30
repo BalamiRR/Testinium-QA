@@ -64,4 +64,6 @@ public class SalesP {
     @FindBy(xpath = "//button[@class='btn btn-sm btn-primary']")
     public WebElement warningButton;
 
+    @FindBy(xpath = "//div[@class='o_notification_manager']")
+    public WebElement warning;
 }

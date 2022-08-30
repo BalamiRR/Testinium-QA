@@ -15,3 +15,8 @@ Feature: .... app Sales feature
     And User can save the customer
     Then User can find his name from search bar
 
+  Scenario: Verify that if customer name field leaves blank, an error message "The following fields are invalid:" is appeared.
+    When User click on the sales dashboard
+    And User click customers button
+    And User can create new customer
+    Then User can get the error

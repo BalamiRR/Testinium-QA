@@ -21,8 +21,33 @@ public class SalesP {
     @FindBy(xpath  = "//a[@href='/web#menu_id=447&action=48']/span")
     public WebElement customersButton;
 
-    @FindBy(xpath = "//title[.='Customers - Odoo']")
-    public WebElement customerTitle;
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o-kanban-button-new btn-default']")
+    public WebElement createButton;
+
+    @FindBy(xpath ="//input[@id='o_field_input_470']" )
+    public WebElement customerName;
+
+    @FindBy(xpath = "//input[@id='o_field_input_474']")
+    public WebElement address;
+
+    @FindBy(xpath = "//input[@id='o_field_input_477']")
+    public WebElement stateOptions;
+
+    @FindBy(xpath = "//li[@id='ui-id-31']/a")
+    public WebElement createAndEditState;
+
+    @FindBy(xpath = "//input[@id='o_field_input_1708']")
+    public WebElement stateName;
+
+    @FindBy(xpath = "//input[@id='o_field_input_1709']")
+    public WebElement stateCode;
+
+    @FindBy(xpath = "//input[@id='o_field_input_1710']")
+    public  WebElement countryStateButton;
+
+    @FindBy(xpath = "//li[@id='ui-id-222']/a")
+    public  WebElement countrySelection;
+
 
 
 }

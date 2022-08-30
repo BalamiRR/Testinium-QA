@@ -1,5 +1,9 @@
 @LogOut
+<<<<<<< HEAD
 Feature: Testinium app logout feature
+=======
+Feature: .... app logout feature
+>>>>>>> feature/salesFunctionality
   User Story:
   As a user, I should be able to logout in login page.
 

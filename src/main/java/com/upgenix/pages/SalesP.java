@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
+import java.util.List;
 
 
 public class SalesP {
@@ -55,7 +55,7 @@ public class SalesP {
     @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
     public WebElement createCustomer;
 
-    @FindBy(xpath = "//input[@class='o_searchview_input']")
+    @FindBy(xpath = "//div[@class='o_searchview']/input")
     public WebElement searchBar;
 
     @FindBy(xpath = "//strong[@class='o_kanban_record_title oe_partner_heading']/span")
@@ -66,4 +66,15 @@ public class SalesP {
 
     @FindBy(xpath = "//div[@class='o_notification_manager']")
     public WebElement warning;
+
+    @FindBy(xpath = "//div[@class='oe_kanban_global_click o_res_partner_kanban o_kanban_record']")
+    public List<WebElement> allCustomers;
+
+    @FindBy(xpath = "//a[@href='/web#menu_id=447&action=48']")
+    public WebElement link;
+
+    @FindBy(xpath = "//div[@class=\"oe_kanban_details\"]//span")
+    public WebElement details;
+
+
 }

@@ -63,9 +63,9 @@ public class Sales {
     }
 
 
-    @Then("User can find his name from search bar")
-    public void userCanFindHisNameFromSearchBar() {
-        salesp.searchBar.sendKeys("Lucas"+ Keys.ENTER);
+    @Then("User can find his name {string} from search bar")
+    public void userCanFindHisNameFromSearchBar(String name) {
+        salesp.searchBar.sendKeys(name+ Keys.ENTER);
         wait.until(ExpectedConditions.visibilityOf(salesp.searchBar));
 
         String actualName = "Lucas";

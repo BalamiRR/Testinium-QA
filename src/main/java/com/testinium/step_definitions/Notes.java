@@ -10,10 +10,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.security.Key;
-
 public class Notes {
 
+    InventoryP inventoryP = new InventoryP();
     NotesP notesP = new NotesP();
 
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 20);
@@ -51,5 +50,24 @@ public class Notes {
         String actualMessage = notesP.createdMessage.getText();
         String expecgedMessage = "Note created";
         Assert.assertEquals(actualMessage, expecgedMessage);
+    }
+
+    @When("User clicks the edit button")
+    public void user_clicks_the_edit_button() {
+        notesP.appK.click();
+    }
+
+    @When("User enters new description")
+    public void user_enters_new_description() {
+        notesP.description.clear();
+        notesP.description.sendKeys("FKASDFGASDFADSFADS");
+        inventoryP.saveBtn.click();
+        notesP.notesModule.click();
+    }
+
+    @Then("User should see the Notes list")
+    public void user_should_see_the_notes_list() {
+        wait.until(ExpectedConditions.visibilityOf(notesP.notesModule));
+        notesP.notesModule.click();
     }
 }

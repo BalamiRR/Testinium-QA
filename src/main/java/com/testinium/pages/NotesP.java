@@ -14,13 +14,6 @@ public class NotesP {
     @FindBy(xpath = "//a[. = 'Create and Edit...']")
     public WebElement tabindex;
 
-
-    @FindBy(xpath = "//title[.='Notes - Odoo']")
-    public WebElement notesTitle;
-
-    @FindBy(xpath = "//a[.='Create ']")
-    public WebElement clickCreate;
-
     @FindBy(partialLinkText = "Notes")
     public WebElement notesModule;
 
@@ -36,9 +29,10 @@ public class NotesP {
     @FindBy(xpath = "//p[.='Note created']")
     public WebElement createdMessage;
 
-    @FindBy(xpath = "//span[.='Create']")
-    public WebElement createTag;
-
     @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
     public WebElement saveBtn;
+
+    @FindBy(xpath = "//span[.='BDD Approach Framework with Cucumber']")
+    public WebElement appK;
+
 }

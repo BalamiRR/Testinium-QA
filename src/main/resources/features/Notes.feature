@@ -1,4 +1,3 @@
-
 Feature: Testinium app login feature
   User Story:
   Background: As a user, I can create new Notes and see the created notes on the list
@@ -16,11 +15,24 @@ Feature: Testinium app login feature
     And User clicks save button
     Then User sees the created new notes
 
-  Scenario: Verify that User can discard and  edit the Notes
-
-
+  Scenario: Verify that User can edit the Notes
+    When User clicks the Notes module
+    And User clicks the edit button
+    And User enters new description
+    And User clicks save button
+    And User enters new description
+    Then User should see the Notes list
 
   Scenario: Verify that User can move element from New stage to Today stage
+
+
+
+
+
+
+
+
+
 
 
 

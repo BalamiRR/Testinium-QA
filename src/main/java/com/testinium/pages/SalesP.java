@@ -1,4 +1,4 @@
-package com.upgenix.pages;
+package com.testinium.pages;
 
 import com.sun.tracing.dtrace.FunctionName;
 import com.upgenix.utilities.Driver;

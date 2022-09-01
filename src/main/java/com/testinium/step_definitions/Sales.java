@@ -1,6 +1,6 @@
-package com.upgenix.step_definitions;
+package com.testinium.step_definitions;
 
-import com.upgenix.pages.SalesP;
+import com.testinium.pages.SalesP;
 import com.upgenix.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;

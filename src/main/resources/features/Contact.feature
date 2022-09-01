@@ -19,9 +19,13 @@ Feature: Testinium app Inventory feature
         | name |    street name |   phone number |         email|
 
 
-  Scenario: Verify that the user can delete a contact from 2 different side
-
-
+    Scenario: Verify that the user can delete a contact from 2 different side
+      When User is at Contact dashboard
+      And User clicks list section and choose the profile
+      And User clicks Action to choose delete button
+      And User clicks and goes directly to the profile
+      And User clicks Action to choose delete button
+      Then User comes back to the dashboard to see if profile is deleted
 
     Scenario: Verify that the user can change the colour of the new created contact.
 

@@ -3,7 +3,7 @@
 
 # Log file
 *.log
-confiuguration.properties
+*.confiuguration.properties
 
 # BlueJ files
 *.ctxt

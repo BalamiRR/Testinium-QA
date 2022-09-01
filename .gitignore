@@ -4,7 +4,7 @@ confiuguration.properties
 
 # Log file
 *.log
-
+configuration.properties
 
 # BlueJ files
 *.ctxt

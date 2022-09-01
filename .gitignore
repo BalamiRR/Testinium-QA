@@ -1,9 +1,10 @@
 # Compiled class file
 *.class
+confiuguration.properties
 
 # Log file
 *.log
-*.confiuguration.properties
+
 
 # BlueJ files
 *.ctxt

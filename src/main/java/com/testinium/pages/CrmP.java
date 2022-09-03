@@ -34,10 +34,31 @@ public class CrmP {
     @FindBy(xpath = "//button[@name='close_dialog']")
     public WebElement createPipeline;
 
-    @FindBy(xpath = "//span[.='test']")
+    @FindBy(xpath = "//div[@data-id='1']/div[2]//strong//span")
     public  WebElement findTitleTest;
 
     @FindBy(xpath = "//div[@data-id='1']//b")
     public WebElement totalPrice;
+
+    @FindBy(xpath = "//div[@data-id='1']/div[2]")
+    public WebElement buttonPipeline;
+
+    @FindBy(xpath = "//button[@accesskey='a']")
+    public WebElement editButton;
+
+    @FindBy(xpath = "//input[@name='name']")
+    public WebElement opportunityTitleEdit;
+
+    @FindBy(xpath = "//input[@id='o_field_input_125']")
+    public WebElement expectedRevenueEdit;
+
+    @FindBy(xpath = "//input[@id='o_field_input_127']")
+    public WebElement probabilityEdit;
+
+    @FindBy(xpath = "//button[@accesskey='s']")
+    public WebElement  saveEdit;
+
+    @FindBy(xpath = "//a[@href='/web#menu_id=274&action=365']/span")
+    public WebElement pipelineSideButton;
 
 }

@@ -2,6 +2,7 @@
 Feature: Testinium app CRM Module
 
   Account is: PosManager
+
   Background: As a Posmanager, I should be able to create and to see my pipeline and custommers on my customers from "CRM" module.
     Given User login to test other features
 
@@ -11,4 +12,14 @@ Feature: Testinium app CRM Module
     And User can create the new pipeline
     And User can see the total price
     Then User can see new pipeline
+
+  Scenario Outline: User can change information in dashboard
+    When User click on the crm dashboard
+    And User can change any user's information like "<opportunity>" , "<revenue>" and "<probability>"
+    And User can save information
+    Then User can verify the information
+
+    Examples: Expected name
+      | opportunity | revenue | probability |
+      | Test2       | 30      | 2           |
 

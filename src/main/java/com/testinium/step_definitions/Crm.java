@@ -8,7 +8,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Crm {
@@ -66,6 +65,43 @@ public class Crm {
         Assert.assertEquals(expectedName,actualName);
 
     }
+
+    @And("User can change any user's information like {string} , {string} and {string}")
+    public void userCanChangeAnyUserSInformationLikeAnd(String opportunity, String revenue, String probability) {
+        crm.buttonPipeline.click();
+        wait.until(ExpectedConditions.visibilityOf(crm.buttonPipeline));
+        crm.editButton.click();
+        crm.opportunityTitleEdit.clear();
+        crm.opportunityTitleEdit.sendKeys(opportunity+Keys.ENTER);
+        crm.expectedRevenueEdit.clear();
+        crm.expectedRevenueEdit.sendKeys(revenue+Keys.ENTER);
+        crm.probabilityEdit.clear();
+        crm.probabilityEdit.sendKeys(probability+Keys.ENTER);
+    }
+
+    @And("User can save information")
+    public void userCanSaveInformation() {
+        wait.until(ExpectedConditions.visibilityOf(crm.probabilityEdit));
+        crm.saveEdit.click();
+    }
+
+    @Then("User can verify the information")
+    public void userCanVerifyTheInformation() {
+        crm.pipelineSideButton.click();
+        wait.until(ExpectedConditions.visibilityOf(crm.buttonPipeline));
+
+        String actualName = crm.findTitleTest.getText();
+        String expectedName = "Test2";
+
+        System.out.println("actualName = " + actualName);
+        System.out.println("expectedName = " + expectedName);
+
+        Assert.assertEquals(expectedName,actualName);
+
+
+
+    }
+
 
 
 }

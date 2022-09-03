@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Upgenix-QA" />
         <module name="upgenix-qa" />
+        <module name="Testinium-QA" />
       </profile>
     </annotationProcessing>
   </component>

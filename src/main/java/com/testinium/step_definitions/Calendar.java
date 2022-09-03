@@ -1,14 +1,8 @@
 package com.testinium.step_definitions;
 
-<<<<<<< HEAD:src/main/java/com/testinium/step_definitions/Calendar.java
 import com.testinium.pages.CalendarP;
 import com.testinium.utilities.Driver;
-=======
-import com.upgenix.pages.CalendarP;
-import com.upgenix.utilities.ConfigurationReader;
-import com.upgenix.utilities.Driver;
 import io.cucumber.java.en.And;
->>>>>>> feature/calendar:src/main/java/com/upgenix/step_definitions/Calendar.java
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;

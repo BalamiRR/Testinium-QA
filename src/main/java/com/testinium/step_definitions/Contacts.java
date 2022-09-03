@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Contacts {
@@ -51,12 +52,15 @@ public class Contacts {
 
     @When("User clicks list section and choose the profile")
     public void user_clicks_list_section_and_choose_the_profile() {
-
+        contactP.callList.click();
+        contactP.newContact.click();
     }
 
     @When("User clicks Action to choose delete button")
     public void user_clicks_action_to_choose_delete_button() {
 
+
+        contactP.actionInput.click();
     }
 
     @When("User clicks and goes directly to the profile")

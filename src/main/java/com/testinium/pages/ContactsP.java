@@ -17,6 +17,9 @@ public class ContactsP {
     @FindBy(xpath = "//button[@accesskey='c']")
     public WebElement createContact;
 
+    @FindBy(xpath = "//button[@accesskey='l']")
+    public WebElement callList;
+
     @FindBy(name = "name")
     public WebElement nameInput;
 
@@ -32,7 +35,17 @@ public class ContactsP {
     @FindBy(xpath="//span[.='Ok']")
     public WebElement okBtn;
 
-    @FindBy(xpath = "//span[.='&Dustin']")
+    @FindBy(xpath = "(//div[@class='o_checkbox']/input)[12]")
     public WebElement newContact;
+
+
+    @FindBy(css = "a[value='Delete']")
+    public WebElement delete;
+
+    @FindBy(xpath = "//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle']")
+    public WebElement actionInput;
+
+
+
 }
 

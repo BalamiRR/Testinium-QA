@@ -7,4 +7,8 @@ Feature: Testinium app CRM Module
 
   Scenario: User can create pipeline in the displayed dashboard
     When User click on the crm dashboard
+    And User click on the pipeline button
+    And User can create the new pipeline
+    And User can fill textBox and register
+    Then User can see new pipeline
 

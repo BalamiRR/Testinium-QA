@@ -9,6 +9,6 @@ Feature: Testinium app CRM Module
     When User click on the crm dashboard
     And User click on the pipeline button
     And User can create the new pipeline
-    And User can fill textBox and register
+    And User can see the total price
     Then User can see new pipeline
 

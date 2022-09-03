@@ -37,5 +37,7 @@ public class CrmP {
     @FindBy(xpath = "//span[.='test']")
     public  WebElement findTitleTest;
 
+    @FindBy(xpath = "//div[@data-id='1']//b")
+    public WebElement totalPrice;
 
 }

@@ -40,7 +40,23 @@ public class Crm {
         crm.expectedRevenue.sendKeys("8"+Keys.ENTER);
         crm.priority.click();
         crm.createPipeline.click();
+        wait.until(ExpectedConditions.visibilityOf(crm.createPipeline));
+    }
 
+    @And("User can see the total price")
+    public void userCanSeeTheTotalPrice() {
+        int totalPrice= Integer.parseInt(crm.totalPrice.getText()) + 8;
+        int price =89;
+
+        System.out.println("totalPrice = " + totalPrice);
+        System.out.println("price = " + price);
+
+        Assert.assertEquals(totalPrice,price);
+
+    }
+
+    @Then("User can see new pipeline")
+    public void userCanSeeNewPipeline() {
         String actualName = crm.findTitleTest.getText();
         String expectedName = "test";
 
@@ -51,13 +67,5 @@ public class Crm {
 
     }
 
-    @And("User can fill textBox and register")
-    public void userCanFillTextBoxAndRegister() {
 
-    }
-
-    @Then("User can see new pipeline")
-    public void userCanSeeNewPipeline() {
-
-    }
 }

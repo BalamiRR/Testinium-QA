@@ -30,4 +30,4 @@ Feature: .... app Sales feature
     Examples: Employee's name
       | name  |
       | Lucas |
-
+    

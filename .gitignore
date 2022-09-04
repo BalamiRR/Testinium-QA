@@ -1,9 +1,17 @@
 # Compiled class file
 *.class
+<<<<<<< HEAD
 configuration.properties
 
 # Log file
 *.log
+=======
+confiuguration.properties
+
+# Log file
+*.log
+configuration.properties
+>>>>>>> feature/crm
 
 # BlueJ files
 *.ctxt

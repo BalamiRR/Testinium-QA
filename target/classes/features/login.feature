@@ -1,9 +1,6 @@
 @Login
-<<<<<<< HEAD
 Feature: Testinium app login feature
-=======
-Feature: .... app login feature
->>>>>>> feature/salesFunctionality
+
   User Story:
   As a user, I should be able to login with correct credentials to different accounts.
 

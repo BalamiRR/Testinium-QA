@@ -1,7 +1,7 @@
 package com.testinium.step_definitions;
 
 import com.testinium.pages.SalesP;
-import com.upgenix.utilities.Driver;
+import com.testinium.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

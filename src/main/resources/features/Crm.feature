@@ -23,3 +23,8 @@ Feature: Testinium app CRM Module
       | opportunity | revenue | probability |
       | Test2       | 30      | 2           |
 
+  Scenario: User can change the situation in progress
+    When User click on the crm dashboard
+    And User can drag and drop the pipeline
+    Then User can see the new changes in progress
+

@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -102,6 +103,20 @@ public class Crm {
 
     }
 
+    @And("User can drag and drop the pipeline")
+    public void userCanDragAndDropThePipeline() {
+        Actions actions = new Actions(Driver.getDriver());
 
+        actions.clickAndHold(crm.progressPipeline)
+                .pause(2000)
+                .moveToElement(crm.progressPipeline2)
+                .pause(2000)
+                .release()
+                .perform();
 
+    }
+
+    @Then("User can see the new changes in progress")
+    public void userCanSeeTheNewChangesInProgress() {
+    }
 }

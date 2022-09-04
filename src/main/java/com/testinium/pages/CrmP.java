@@ -61,4 +61,10 @@ public class CrmP {
     @FindBy(xpath = "//a[@href='/web#menu_id=274&action=365']/span")
     public WebElement pipelineSideButton;
 
+    @FindBy(xpath = "//div[@data-id='1']/div[2]")
+    public WebElement progressPipeline;
+
+    @FindBy(xpath = "//div[@data-id='2']/div[2]")
+    public WebElement progressPipeline2;
+
 }

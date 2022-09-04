@@ -67,4 +67,36 @@ public class CrmP {
     @FindBy(xpath = "//div[@data-id='2']/div[2]")
     public WebElement progressPipeline2;
 
+    @FindBy(xpath = "//div[@data-id='2']//div[2]//strong//span")
+    public WebElement testVerify;
+
+    @FindBy(xpath = "//a[@href='/web#menu_id=272&action=48']")
+    public WebElement customerSideButton;
+
+    @FindBy(xpath = "//button[@accesskey='c']")
+    public WebElement createCustomer;
+
+    @FindBy(xpath = "//input[@name='name']")
+    public WebElement inputName;
+
+    @FindBy(xpath = "//button[@name='close_dialog']")
+    public WebElement createCustomerButton;
+
+    @FindBy(xpath = "//input[@class='o_searchview_input']")
+    public WebElement searchingText;
+
+    @FindBy(xpath =  "//span[.='&CC']")
+    public WebElement nameCustomer;
+
+    @FindBy(xpath = "//a[@data-section='print']")
+    public WebElement duePaymentButton;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[1]/button")
+    public WebElement printButton;
+
+
+
+
+
+
 }

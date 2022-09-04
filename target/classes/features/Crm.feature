@@ -28,3 +28,9 @@ Feature: Testinium app CRM Module
     And User can drag and drop the pipeline
     Then User can see the new changes in progress
 
+  Scenario: User can register new customer and can print the profile
+    When User click on the crm dashboard
+    And User can register new customer
+    Then User can print the profile
+
+

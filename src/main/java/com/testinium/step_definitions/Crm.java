@@ -104,7 +104,7 @@ public class Crm {
     }
 
     @And("User can drag and drop the pipeline")
-    public void userCanDragAndDropThePipeline() {
+    public void userCanDragAndDropThePipeline() throws InterruptedException {
         Actions actions = new Actions(Driver.getDriver());
 
         actions.clickAndHold(crm.progressPipeline)
@@ -114,9 +114,41 @@ public class Crm {
                 .release()
                 .perform();
 
+        Thread.sleep(2000);
+
     }
 
     @Then("User can see the new changes in progress")
     public void userCanSeeTheNewChangesInProgress() {
+        String actualName = crm.testVerify.getText();
+        String expectedName = "test";
+
+        System.out.println("actualName = " + actualName);
+        System.out.println("expectedName = " + expectedName);
+
+        Assert.assertEquals(expectedName,actualName);
+    }
+
+    @And("User can register new customer")
+    public void userCanRegisterNewCustomer() {
+        crm.customerSideButton.click();
+        wait.until(ExpectedConditions.visibilityOf(crm.customerSideButton));
+        crm.createCustomer.click();
+        wait.until(ExpectedConditions.visibilityOf(crm.createCustomer));
+        crm.inputName.sendKeys("Test"+Keys.ENTER);
+        crm.createCustomerButton.click();
+        wait.until(ExpectedConditions.visibilityOf(crm.createCustomerButton));
+        crm.searchingText.sendKeys("aa"+Keys.ENTER);
+
+    }
+
+    @Then("User can print the profile")
+    public void userCanPrintTheProfile() {
+        crm.nameCustomer.click();
+        wait.until(ExpectedConditions.visibilityOf(crm.nameCustomer));
+        crm.printButton.click();
+        wait.until(ExpectedConditions.visibilityOf(crm.duePaymentButton));
+        crm.duePaymentButton.click();
+
     }
 }

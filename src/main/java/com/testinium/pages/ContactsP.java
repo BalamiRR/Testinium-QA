@@ -42,8 +42,8 @@ public class ContactsP {
     @FindBy(css = "a[value='Delete']")
     public WebElement delete;
 
-    @FindBy(xpath = "//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle']")
-    public WebElement actionInput;
+//    @FindBy(xpath = "(//div[@class='o_cp_sidebar']/div/div)[2]")
+//    public WebElement actionInput;
 
 
 

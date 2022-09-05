@@ -5,6 +5,9 @@ import com.testinium.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -51,16 +54,27 @@ public class Contacts {
     }
 
     @When("User clicks list section and choose the profile")
-    public void user_clicks_list_section_and_choose_the_profile() {
+    public void user_clicks_list_section_and_choose_the_profile() throws InterruptedException {
+        Thread.sleep(3000);
         contactP.callList.click();
+        Thread.sleep(3000);
         contactP.newContact.click();
     }
 
     @When("User clicks Action to choose delete button")
     public void user_clicks_action_to_choose_delete_button() {
+        Select select = new Select(Driver.getDriver().findElement(By.xpath("(//div[@class='o_cp_sidebar']/div/div)[2]")));
+        WebElement currentlySelectedOptiom = select.getFirstSelectedOption();
+
+        String actual = currentlySelectedOptiom.getText();
+        String expected = "Action";
+
+        Assert.assertEquals(actual,expected);
+
+        //select.selectByVisibleText("Delete");
 
 
-        contactP.actionInput.click();
+        //contactP.actionInput.click();
     }
 
     @When("User clicks and goes directly to the profile")

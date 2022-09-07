@@ -42,10 +42,11 @@ public class ContactsP {
     @FindBy(css = "a[value='Delete']")
     public WebElement delete;
 
-//    @FindBy(xpath = "(//div[@class='o_cp_sidebar']/div/div)[2]")
-//    public WebElement actionInput;
+    @FindBy(xpath = "(//div[@class='o_cp_sidebar']/div/div)[2]")
+    public WebElement actionInput;
 
-
+    @FindBy(xpath = "//a[@data-index='3']")
+    public WebElement deleteInput;
 
 }
 

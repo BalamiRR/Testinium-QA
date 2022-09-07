@@ -1,8 +1,6 @@
 package com.testinium.pages;
 
-import com.sun.tracing.dtrace.FunctionName;
 import com.testinium.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

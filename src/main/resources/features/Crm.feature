@@ -1,4 +1,4 @@
-@Crm
+@Smoke
 Feature: Testinium app CRM Module
 
   Account is: PosManager

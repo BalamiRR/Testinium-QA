@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: Upgenix app Employees module</title>
+<title>Cucumber Reports  - Feature: Testinium app CRM Module</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>25 Aug 2022, 14:01</td>
+      <td>07 Sep 2022, 15:39</td>
     </tr>
   </tbody>
 </table>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Upgenix app Employees module</td>
+          <td class="tagname">Testinium app CRM Module</td>
+          <td      class="passed"    >14</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >3</td>
           <td >0</td>
-          <td      class="failed"    >4</td>
-          <td     class="skipped"   >10</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">14</td>
+          <td class="total">19</td>
 
-          <td >0</td>
-          <td  class="failed"    >4</td>
+          <td  class="passed"    >2</td>
+          <td  class="failed"    >2</td>
           <td class="total">4</td>
 
-          <td class="duration" data-value="3756000000">3.756</td>
+          <td class="duration" data-value="100186000000">1:40.186</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -169,13 +169,13 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_341484199.html">@UPGN-344</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
 </div>
 
 
 <div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">Upgenix app Employees module</span>
+  <span class="name">Testinium app CRM Module</span>
 
 
 </div>
@@ -191,14 +191,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">30.202</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
-  <span class="name">As a Posmanager, I should be able to create and edit a new employee from &quot;Employees&quot; module</span>
+  <span class="name">As a Posmanager, I should be able to create and to see my pipeline and custommers on my customers from &quot;CRM&quot; module.</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -227,6 +227,33 @@ $(document).ready(function() {
   </div>
 
   <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User login to test other features</span>
+
+  <span class="lead-duration duration">30.202</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
   </div>
 </div>
 
@@ -243,19 +270,18 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_341484199.html">@UPGN-344</a>
-       <a href="report-tag_341484195.html">@UPGN-340</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">3.745</span>
+  <span class="lead-duration duration">8.933</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify that all buttons work as expected at the employees stage</span>
+  <span class="name">User can create pipeline in the displayed dashboard</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -287,11 +313,92 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">User is on the dashboard</span>
+  <span class="name">User click on the crm dashboard</span>
 
-  <span class="lead-duration duration">3.744</span>
+  <span class="lead-duration duration">2.618</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click on the pipeline button</span>
+
+  <span class="lead-duration duration">2.975</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User can create the new pipeline</span>
+
+  <span class="lead-duration duration">3.273</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">User can see the total price</span>
+
+  <span class="lead-duration duration">0.067</span>
 
 </div>
 
@@ -303,17 +410,16 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
-          <a>java.lang.NullPointerException:</a>
+          <a>java.lang.AssertionError:</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: null value in entry: url=null
-	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
-	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
-	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
-	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.upgenix.step_definitions.EmployeeStage.user_is_on_the_dashboard(EmployeeStage.java:24)
-	at &#10045;.User is on the dashboard(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/EmployeeFc.feature:9)
+        <pre>java.lang.AssertionError: expected:&lt;8&gt; but was:&lt;89&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.testinium.step_definitions.Crm.userCanSeeTheTotalPrice(Crm.java:54)
+	at &#10045;.User can see the total price(file:///C:/Selenium/Testinium-QA/src/main/resources/features/Crm.feature:13)
 </pre>
       </div>
     </div>
@@ -333,90 +439,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">User clicks Employees stage</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">User clicks Challenges stage</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">User clicks Departments stage</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
 <div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">User should see the last stage title</span>
+  <span class="name">User can see new pipeline</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -456,14 +481,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.130</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
-  <span class="name">As a Posmanager, I should be able to create and edit a new employee from &quot;Employees&quot; module</span>
+  <span class="name">As a Posmanager, I should be able to create and to see my pipeline and custommers on my customers from &quot;CRM&quot; module.</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -492,6 +517,33 @@ $(document).ready(function() {
   </div>
 
   <div id="steps-7" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User login to test other features</span>
+
+  <span class="lead-duration duration">3.130</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
   </div>
 </div>
 
@@ -508,19 +560,18 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_341484199.html">@UPGN-344</a>
-       <a href="report-tag_341484196.html">@UPGN-341</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">17.090</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify that the &quot;Employee created&quot; message appears under full profile</span>
+  <span class="name">User can change information in dashboard</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -552,11 +603,38 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">User is on the employees dashboard</span>
+  <span class="name">User click on the crm dashboard</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">1.102</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">User can change any user's information like <span class="argument">&quot;Test2&quot;</span> , <span class="argument">&quot;30&quot;</span> and <span class="argument">&quot;2&quot;</span></span>
+
+  <span class="lead-duration duration">15.987</span>
 
 </div>
 
@@ -568,17 +646,37 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
-          <a>java.lang.NullPointerException:</a>
+          <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: null value in entry: url=null
-	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
-	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
-	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
-	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.upgenix.step_definitions.EmployeeStage.user_is_on_the_employees_dashboard(EmployeeStage.java:60)
-	at &#10045;.User is on the employees dashboard(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/EmployeeFc.feature:17)
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id='o_field_input_125']&quot;}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FURKAN', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\furkan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 69d7fe29cf1244d61da3418ae3e6bfc2
+*** Element info: {Using=xpath, value=//input[@id='o_field_input_125']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.clear(Unknown Source)
+	at com.testinium.step_definitions.Crm.userCanChangeAnyUserSInformationLikeAnd(Crm.java:77)
+	at &#10045;.User can change any user's information like &quot;Test2&quot; , &quot;30&quot; and &quot;2&quot;(file:///C:/Selenium/Testinium-QA/src/main/resources/features/Crm.feature:18)
 </pre>
       </div>
     </div>
@@ -600,7 +698,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">User creates new employees <span class="argument">&quot;Cristiano Ronaldo&quot;</span> in the Employees stage</span>
+  <span class="name">User can save information</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -627,7 +725,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">User should see the Employee created message under full profile</span>
+  <span class="name">User can verify the information</span>
 
   <span class="lead-duration duration">0.001</span>
 
@@ -667,14 +765,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.344</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
-  <span class="name">As a Posmanager, I should be able to create and edit a new employee from &quot;Employees&quot; module</span>
+  <span class="name">As a Posmanager, I should be able to create and to see my pipeline and custommers on my customers from &quot;CRM&quot; module.</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -703,6 +801,33 @@ $(document).ready(function() {
   </div>
 
   <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User login to test other features</span>
+
+  <span class="lead-duration duration">2.344</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
   </div>
 </div>
 
@@ -719,19 +844,18 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_341484199.html">@UPGN-344</a>
-       <a href="report-tag_341484197.html">@UPGN-342</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">22.345</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify that the user should be able to see created employee is listed after clicking the Employees module</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">User can change the situation in progress</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -740,16 +864,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-13" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -759,15 +883,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">User is on the employees dashboard</span>
+  <span class="name">User click on the crm dashboard</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">1.860</span>
 
 </div>
 
@@ -775,25 +899,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
-          <a>java.lang.NullPointerException:</a>
-      </div>
-      <div id="msg-15" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: null value in entry: url=null
-	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
-	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
-	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
-	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.upgenix.step_definitions.EmployeeStage.user_is_on_the_employees_dashboard(EmployeeStage.java:60)
-	at &#10045;.User is on the employees dashboard(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/EmployeeFc.feature:27)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -809,11 +914,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">User creates new employees <span class="argument">&quot;Lionel Messi&quot;</span> in the Employees stage</span>
+  <span class="name">User can drag and drop the pipeline</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">20.400</span>
 
 </div>
 
@@ -836,11 +941,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">User should see listed employees in the Employees stage</span>
+  <span class="name">User can see the new changes in progress</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.085</span>
 
 </div>
 
@@ -878,14 +983,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.459</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
-  <span class="name">As a Posmanager, I should be able to create and edit a new employee from &quot;Employees&quot; module</span>
+  <span class="name">As a Posmanager, I should be able to create and to see my pipeline and custommers on my customers from &quot;CRM&quot; module.</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -894,14 +999,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-16" class="collapse collapsable-details ">
+  <div id="element-15" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -913,7 +1018,34 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details ">
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User login to test other features</span>
+
+  <span class="lead-duration duration">2.459</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
   </div>
 </div>
 
@@ -930,19 +1062,18 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_341484199.html">@UPGN-344</a>
-       <a href="report-tag_341484198.html">@UPGN-343</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">13.683</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-18">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify that the user can edit a new employee from &quot;Employees&quot; module</span>
+  <span class="name">User can register new customer and can print the profile</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -951,16 +1082,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-18" class="collapse collapsable-details  in ">
+  <div id="element-17" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -970,15 +1101,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">User is on the employees dashboard</span>
+  <span class="name">User click on the crm dashboard</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">1.015</span>
 
 </div>
 
@@ -986,25 +1117,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-20">
-          <a>java.lang.NullPointerException:</a>
-      </div>
-      <div id="msg-20" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: null value in entry: url=null
-	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
-	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
-	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
-	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.upgenix.step_definitions.EmployeeStage.user_is_on_the_employees_dashboard(EmployeeStage.java:60)
-	at &#10045;.User is on the employees dashboard(file:///C:/Users/fuatk/OneDrive/Masa&uuml;st&uuml;/Cydeo/Dersler%20ve%20Notlar/Dersler/Automation-Selenium/Proje/upgenix-qa/src/main/resources/features/EmployeeFc.feature:37)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -1020,11 +1132,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">User edits created employees in the Employees module</span>
+  <span class="name">User can register new customer</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">6.441</span>
 
 </div>
 
@@ -1047,11 +1159,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">User should see the edited name in the Employees module</span>
+  <span class="name">User can print the profile</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">6.227</span>
 
 </div>
 

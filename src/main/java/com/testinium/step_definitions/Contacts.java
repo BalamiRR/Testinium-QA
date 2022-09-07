@@ -69,16 +69,6 @@ public class Contacts {
         contactP.editBtn.click();
     }
 
-    @Then("User sees the updated contact details at dashboard")
-    public void user_sees_the_updated_contact_details_at_dashboard() {
-
-    }
-
-    @When("User clicks and goes directly to the profile")
-    public void user_clicks_and_goes_directly_to_the_profile() {
-
-    }
-
     @Then("User sees deleted profile")
     public void user_sees_deleted_profile() {
         String actualMsg = contactP.deleteInput.getText();
@@ -92,13 +82,24 @@ public class Contacts {
         wait.until(ExpectedConditions.visibilityOf(contactP.editTitle));
     }
 
-    @When("User clicks the print button and then select due payments")
-    public void user_clicks_the_print_button_and_then_select_due_payments() {
+    @Then("User sees the updated contact details at dashboard")
+    public void user_sees_the_updated_contact_details_at_dashboard() {
+        contactP.contactModule.click();
+    }
 
+//    @When("User clicks and goes directly to the profile")
+//    public void user_clicks_and_goes_directly_to_the_profile() {
+//
+//    }
+
+    @When("User clicks the print button and then select due payments")
+    public void user_clicks_the_print_button_and_then_select_due_payments() throws InterruptedException {
+        contactP.printInput.click();
+        Thread.sleep(3000);
     }
 
     @Then("User can see the downloaded file")
     public void user_can_see_the_downloaded_file() {
-
+        contactP.duePayment.click();
     }
 }

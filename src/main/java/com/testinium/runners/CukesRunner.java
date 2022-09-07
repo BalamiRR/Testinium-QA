@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
     features = "src/main/resources/features",
     glue = "com/testinium/step_definitions",
     dryRun = false,
-    tags = "@Deneme"
+    tags = "@Dash"
 )
 public class CukesRunner {
 

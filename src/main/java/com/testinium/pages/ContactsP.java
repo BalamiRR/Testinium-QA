@@ -52,5 +52,14 @@ public class ContactsP {
 
     @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_edit']")
     public WebElement editBtn;
+
+    @FindBy(xpath = "//div[@class='btn-group o_dropdown open']")
+    public WebElement printInput;
+
+
+    @FindBy(xpath = "(//div[@class='btn-group o_dropdown open']/button)")
+    public WebElement duePayment;
+
+
 }
 

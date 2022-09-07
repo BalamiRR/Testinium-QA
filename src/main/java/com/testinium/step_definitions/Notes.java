@@ -76,7 +76,6 @@ public class Notes {
     @When("User move element from New section to Today section")
     public void user_move_element_from_new_section_to_today_section() {
         Actions actions = new Actions(Driver.getDriver());
-
         actions.clickAndHold(notesP.newTable).pause(2000).moveToElement(notesP.todayTable).pause(2000).release().perform();
     }
 

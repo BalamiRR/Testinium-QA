@@ -15,12 +15,8 @@ import org.junit.runner.RunWith;
     features = "src/main/resources/features",
     glue = "com/testinium/step_definitions",
     dryRun = false,
-<<<<<<< HEAD
     tags = "@Smoke"
 
-=======
-    tags = "@Dash"
->>>>>>> feature/Contact
 )
 public class CukesRunner {
 

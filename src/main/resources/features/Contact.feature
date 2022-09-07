@@ -25,7 +25,7 @@ Feature: Testinium app Inventory feature
 
   Scenario Outline: Verify that the user can edit the contact
     When User selects the profile
-    And User clicks the edit button
+    And User clicks for editing button
     And User enters name "<name>"
     And User enters "<street name>"
     And User enters "<phone number>" and "<email>"

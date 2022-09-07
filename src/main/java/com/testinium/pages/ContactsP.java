@@ -38,15 +38,19 @@ public class ContactsP {
     @FindBy(xpath = "(//div[@class='o_checkbox']/input)[12]")
     public WebElement newContact;
 
-
-    @FindBy(css = "a[value='Delete']")
-    public WebElement delete;
-
     @FindBy(xpath = "(//div[@class='o_cp_sidebar']/div/div)[2]")
     public WebElement actionInput;
 
     @FindBy(xpath = "//a[@data-index='3']")
     public WebElement deleteInput;
 
+    @FindBy(xpath = "(//div[@class='o_kanban_view o_res_partner_kanban o_kanban_ungrouped']/div)[1]")
+    public WebElement firstUser;
+
+    @FindBy(xpath = "//div[@class='oe_title']")
+    public WebElement editTitle;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_edit']")
+    public WebElement editBtn;
 }
 
